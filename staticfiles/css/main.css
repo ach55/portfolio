@@ -1,4 +1,40 @@
 body {
-    background-color: #FFE6E6 !important;
+    /* background-color: #FFE6E6 !important; */
     /* background-color: #FEECE2 !important; */
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #AD88C6;
+}
+
+.navbar-brand,
+.home-link,
+.about-link,
+.gallery-link,
+.contact-link {
+    color: white
+}
+
+
+.jumbotron {
+    background-color: #FFE6E6 !important;
+}
+
+
+
+footer {
+    background-color: #AD88C6;
+    padding: 25px;
+}
+
+.footer-text {
+    color: white
 }
