@@ -1,4 +1,35 @@
 
+.logo {
+    width: 8em;
+    height: 5em;
+}
+
+.navbar-text {
+    font-family: 'Gotham', sans-serif !important;
+    color: #ffe7e7 !important;
+    font-size: 1.3em !important;
+    vertical-align: middle;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+
+.nav-link {
+    color: #ffe7e7 !important;
+}
+
+.nav-link:hover {
+    color: #CAA6a6 !important;
+}
+
+#hero-heading {
+    letter-spacing: .3rem;
+    font-size: 5em;
+}
+
+#hero-subheading {
+    letter-spacing: .4rem;
+    font-size: 1.3em;
+}
 
 .profile-pic {
     width: 250px;
@@ -26,31 +57,51 @@
     text-align: left !important;
 }
 
+.linkedin-btn {
+    color: white !important;
+    background-color: #B47B84 !important;
+    border-color: #B47B84 !important;
 
-/* Color variables */
+}
+
+.linkedin-btn:hover {
+    color: #B47B84 !important;
+    background-color: white !important;
+    border-color: #B47B84 !important;
+    
+}
+
+#btn-linkedin-logo {
+    margin-top: .2em
+}
+
+#btn-linkedin-logo:hover {
+    color: #B47B84 !important;
+    margin-top: .2em
+}
+
 :root {
     --white-color: #fff;
     --bg-color: #fff;
     --gray-color: #ccc;
 }
 
-/* Changing background color */
 body {
     background: var(--bg-color) !important;
+    font-family: 'Gotham', sans-serif !important;
 }
 
-/* Changing link color */
 .nav-item .nav-link {
     color: var(--white-color);
 }
 
-/* Hero section background image */
 .hero {
     height: 100vh;
     background-color: #944E63 !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    background-image: url("../images/hero.png");
 }
 
 #skills i {
@@ -69,7 +120,6 @@ body {
     position: relative;
 }
 
-/* Timeline background line */
 #about .img::before {
     content: "";
     left: 50%;
@@ -98,11 +148,14 @@ footer .social-icons a {
     height: 30px;
 }
 
+#footer-linkedin-logo {
+    color: #0077B5 !important;
+}
+
 #cv img {
     width: 230px;
 }
 
-/* Contact section background image */
 #contact {
     background-size: cover;
     background-attachment: fixed;
@@ -111,15 +164,34 @@ footer .social-icons a {
     /* background-image: url("../images/contact-bg.jpeg"); */
 }
 
+.contact-btn:hover {
+    color: #B47B84 !important;
+}
+
+.copyright {
+    font-family: 'Gotham', sans-serif !important;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-text {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 990px) {
-    #skills .card {
+    #about .card {
         width: calc(100% / 2 - 10px) !important;
     }
 }
 
 @media screen and (max-width: 668px) {
-    #skills .card,
+    #about .card,
     #portfolio .card-wrapper {
         width: 100% !important;
     }
-}  
+
+    #about .hire-text h2 {
+        height: 70px;
+        width: 70px;
+    }   
+}
