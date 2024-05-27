@@ -14,34 +14,34 @@
 </head>
 
 <body>
-<!-- Nav Bar -->
-<header class="bg-dark fixed-top">
-    <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
-        <div class="container-fluid">
-            <div class="logo-div">
-                <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
-                <a class="navbar-brand navbar-text ml-1" href="/">Anaik Chacon</a>
+    <!-- Nav Bar -->
+    <header class="bg-dark fixed-top">
+        <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div class="logo-div">
+                    <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
+                    <a class="navbar-brand navbar-text ml-1" href="/">Anaik Chacon</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-2"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#projects">PROJECTS</a></li>
+                    <li class="nav-item mx-2"><a class="nav-link" href="#contact">CONTACT</a></li>
+                </div>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item mx-2"><a class="nav-link" href="#about">ABOUT</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                <li class="nav-item mx-2"><a class="nav-link" href="#contact">CONTACT</a></li>
-            </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
     <!-- Hero -->
     <section class="hero d-flex flex-column align-items-center justify-content-center">
         <div class="text-center">
             <img class="profile-pic" src="{% static 'images/profile.jpg' %}">
             <br><br>
-            <h1 id="hero-heading" class="display-3 text-white text-uppercase">Anaik Chacon</h2>
-            <h3 id="hero-subheading" class="h1 text-white fst-italic text-uppercase">Web Design & Development | UX/UI | Graphic Design</h1>
+            <h2 id="hero-heading" class="display-3 text-white text-uppercase">Anaik Chacon</h2>
+            <h3 id="hero-subheading" class="h1 text-white fst-italic text-uppercase">Web Design & Development | UX/UI | Graphic Design</h3>
         </div>
     </section>
     
@@ -110,7 +110,7 @@
             <div class="row mt-5 mb-2 py-3">
                 <div class="col-12 d-flex flex-column text-center justify-content-center mt-2">
                     <h2>PROJECTS</h2>
-                    <h5 class="text-secondary fw-normal py-2 fst-italic">Some of my recent projects, check out the projects page to see more!</h5>
+                    <h5 class="text-secondary fw-normal py-2 fst-italic">Some of my recent projects. Check out the projects page (click on more projects) to see more!</h5>
                 </div>
             </div>
             <br><br>
@@ -176,7 +176,7 @@
             <div class="row pt-4 mt-5">
                 <div class="col-12">
                     <form action="#" method="POST">
-                        <div class="row d-flex justify-content-center">
+                        <div class="row d-flex justify-content-center mb-5">
                             <div class="col-lg-6">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="floatingInput" placeholder="Name*" required>
@@ -196,7 +196,7 @@
                                 <label for="floatingMessage" class="px-4">Message*</label>
                             </div>
                             <div class="col-12 mt-5 d-flex justify-content-center">
-                                <button class="btn btn-lg btn-outline-light text-uppercase contact-btn">Send</button>
+                                <button class="btn btn-lg btn-outline-light contact-btn">SEND</button>
                             </div>
                         </div>
                     </form>
@@ -206,7 +206,7 @@
     </section>
 
     <footer>
-        <div class="container-xxl flex-wrap py-5 d-flex justify-content-between align-items-center">
+        <div class="container-xxl flex-wrap py-5 d-flex align-items-center justify-content-center justify-content-md-between">
             <p class="copyright my-0">© 2024 Anaik Chacon</p>
             <ul class="social-icons mb-0 d-flex">
                 <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
@@ -215,6 +215,7 @@
             </ul>
         </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
