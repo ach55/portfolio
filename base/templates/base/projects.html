@@ -7,10 +7,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anaik Chacon</title>
-    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -19,7 +19,6 @@
         <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
             <div class="container-fluid">
                 <div class="logo-div">
-                    <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
                     <a class="navbar-brand navbar-text ml-1" href="/">Anaik Chacon</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
@@ -27,131 +26,158 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item mx-2"><a class="nav-link" href="/">HOME</a></li>
-                  <li class="nav-item mx-2"><a class="nav-link" href="/projects">PROJECTS</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="/">HOME</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="/projects">PROJECTS</a></li>
                 </div>
             </div>
         </nav>
     </header>
 
-    <div id="projects-header" class="position-relative overflow-hidden p-md-5 text-center">
-      <div class="col-md-8 p-lg-5 mx-auto my-5">
-        <h1 class="display-3 text-white text-uppercase">Projects</h1>
-        <h3 class="text-white fst-italic text-uppercase">Explore my recent personal projects. These are meant to be just case studies and conceptual exercises.</h3>
-      </div>
+    <!-- Projects Header -->
+    <div class="slider-item innerp overlay" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center text-center">
+            <div class="col-lg-12 col-sm-12">
+              <h1 class="mb-4">Projects</h1>
+              <h4 class="mb-4">Check out my recent personal projects!<br>These examples are intended as case studies and conceptual exercises.</h4>
+              <p class="custom-breadcrumbs"><a href="/">Home</a> <span class="mx-3">/</span>Projects</p>
+            </div>
+          </div>
+        </div>
     </div>
 
-    <!-- <section class="container projects-container">
-      <div class="row d-flex justify-content-between mx-0">
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white" style="width: 25rem">
-          <div class="item">
-            <a href="" class="item-wrap fancybox mb-4">
-              <span class="icon-search2"></span>
-              <img class="img-fluid" src="{% static 'images/brand-guide-projects-page.png' %}" alt="Brand Guide Presentation Main Page">
-            </a>
-          </div>
+    <!-- Projects -->
+    <div class="section">
+        <div id="services" class="basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <a href="/brand-guide">
+                                <img class="img-fluid" src="{% static 'images/brand-guide-projects-page.png' %}" alt="Brand Guide Presentation Main Page">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <div class="text-container-text">
+                                <h2 class="">Anaik Chacon Design</h2>
+                                <p class="">When I first began exploring personal projects in web design and development and graphic design, I wasn't sure where to start. So, I started by
+                                    designing my own brand. After all I'm my own best client since I knew waht I wanted. I focused on creating somthing that shows my skills, while also creating
+                                    a brand I resonate with.</p>
+                            </div>
+                            <div class="text-container-btn mt-5">
+                                <a href="/brand-guide"><button class="btn btn-lg btn-outline-light text-uppercase projects-learn-more-btn">Learn more</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white" style="width: 25rem">
-            
-        </div>
-        <div class="card mt-5 d-flex flex-column align-items-center text-center bg-white" style="width: 25rem">
 
+        <div class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <a href="/boba-bar">
+                                <img class="img-fluid" src="{% static 'images/boba-bar-projects-page.png' %}" alt="The Boba Bar Presentation Main Page">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>The Boba Bar</h2>
+                            <p>Enjoy your bubble tea in a bougie and serene bar atmosphere! Would you like to try our new Milk Tea with Baileys or our classic Brown Sugar Milk Tea with Bourbon? Take your pick!</p>
+                            <a href="/boba-bar"><button class="btn btn-lg btn-outline-light text-uppercase projects-learn-more-btn">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </section> -->
+        
+        <div class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            <a href="/campsite-companions">
+                                <img class="img-fluid" src="{% static 'images/campsite-companions-projects-page.png' %}" alt="Campsite Companions Main Page">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>Campsite Companions</h2>
+                            <p>Campsite Companions has all the gear you and your dog need for an epic outdoor adventure, from backpacks and leashes to tents and cooking gear. Let the tails hit the trail!</p>
+                            <a href="/campsite-companions"><button class="btn btn-lg btn-outline-light text-uppercase projects-learn-more-btn">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <!-- <div class="site-section site-portfolio mt-5">
-      <div class="container mt-5">
-        <div id="portfolio-grid" class="row no-gutter" data-aos="fade-up" data-aos-delay="200">
-          <div class="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Band Guide</h3>
-              </div>
-              <img class="projects-page-img" src="{% static 'images/brand-guide-projects-page.png' %}" alt="Brand Guide Presentation Main Page">
-            </a>
-            <div>
-              <h3 class="mt-3">Anaik Chacon Design</h3>
-              <span>My Brand!</span>
+        <div class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>Clay Cafe Rebrand</h2>
+                            <p>Clay Cafe is a Nova-Scotian based company formarly located in Halifax. Clay Cafe is the focus of this reimagining brand project</p>
+                            <a href=""><button class="btn btn-lg btn-outline-light text-uppercase projects-learn-more-btn">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/boba-bar" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>The Boba Bar</h3>
-              </div>
-              <img class="projects-page-img" src="{% static 'images/boba-bar-projects-page.png' %}" alt="The Boba Bar Presentation Main Page">
-            </a>
-            <div>
-              <h3 class="mt-3">The Boba Bar</h3>
-              <span>Enjoy your bubble tea in a bougie and serene bar atmosphere! Would you like to try our new Milk Tea with Baileys or our classic Brown Sugar Milk Tea with Bourbon? Take your pick!</span>
-            </div>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="/campsite-companions" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Campside Companions</h3>
-              </div>
-              <img class="projects-page-img" src="{% static 'images/campsite-companions-projects-page.png' %}" alt="Campsite Companions Main Page">
-            </a>
-            <div>
-              <h3 class="mt-3">Campsite Companions</h3>
-              <span>Campsite Companions has all the gear you and your dog need for an epic outdoor adventure, from backpacks and leashes to tents and cooking gear. Let the tails hit the trail!</span>
-            </div>
-          </div>
-          <div class="item design col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Clay Cafe Rebrand</h3>
-              </div>
-              <img class="projects-page-img" src="{% static 'images/blank.png' %}" alt="Blank Main Page">
-            </a>
-            <div>
-              <h3 class="mt-3">Clay Cafe Rebrand</h3>
-              <span>Clay Cafe is a Nova-Scotian based company formarly located in Halifax. Clay Cafe is the focus of this reimagining brand project.</span>
-            </div>
-          </div>
-          <div class="item photography col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Project 5</h3>
-              </div>
-              <img class="projects-page-img" src="{% static 'images/blank.png' %}" alt="Blank Main Page">
-            </a>
-            <div>
-              <h3 class="mt-3">Project 5</h3>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem eu nunc aliquam viverra non ac lacus. Sed placerat ex at erat congue consequat.</span>
-            </div>
-          </div>
-          <div class="item branding col-sm-6 col-md-4 col-lg-4 mb-4">
-            <a href="#" class="item-wrap fancybox">
-              <div class="work-info">
-                <h3>Crochet</h3>
-              </div>
-              <img class="projects-page-img" src="{% static 'images/blank.png' %}" alt="Blank Main Page">
-            </a>
-            <div>
-              <h3 class="mt-3">Crochet</h3>
-              <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et sem eu nunc aliquam viverra non ac lacus. Sed placerat ex at erat congue consequat.</span>
-            </div>
-          </div>
         </div>
-      </div>
-  </div> -->
+
+        <div class="basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="image-container">
+                        
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="text-container">
+                            <h2>Crochet</h2>
+                            <p>My crochet projects</p>
+                            <a href=""><button class="btn btn-lg btn-outline-light text-uppercase projects-learn-more-btn">Learn more</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
   
-  <br><br><br><br>
-  <footer>
-      <div class="container-xxl flex-wrap py-5 d-flex align-items-center justify-content-center justify-content-md-between">
-          <p class="copyright my-0">© 2024 Anaik Chacon</p>
-          <ul class="social-icons mb-0 d-flex">
-              <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
-                  <i id="footer-linkedin-logo" class="fa-brands fa-2xl fa-linkedin"></i>
-              </a>
-          </ul>
-      </div>
-  </footer>
+   <!-- Footer -->
+   <footer>
+        <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
+            <p class="copyright my-0">© 2024 Anaik Chacon</p>
+            <a id="footer-back-to-top-link" class="smoothscroll" href="#hero">
+                <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 back-to-top-btn">
+                    Top <i id="footer-back-to-top-icon" class="fa-solid fa-circle-up fa-lg"></i>
+                </button>
+            </a>
+            <div class="footer-icons-div">
+                <ul class="social-icons mb-0 d-flex">
+                    <a href="" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none">
+                        <img class="footer-instagram-logo" src="{% static 'images/instagram-logo.png' %}" alt="Instagram logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
+                        <i id="footer-linkedin-logo" class="fa-brands fa-2x fa-linkedin"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
