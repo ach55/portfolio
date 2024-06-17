@@ -23,7 +23,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../images/hero.png");
+    background-image: url("../images/heros/landing-page-hero.png");
 }
 
 .logo {
@@ -167,8 +167,8 @@ body {
 }
 
 #projects {
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 9em;
+    padding-bottom: 16em;
 }
 
 #about .img,
@@ -204,7 +204,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-color: #B47B84;
-    background-image: url("../images/contact-hero.png");
+    background-image: url("../images/heros/contact-hero.png");
 }
 
 .copyright {
@@ -307,7 +307,7 @@ body {
 }
 
 .portfolio .portfolio-item figure {
-    background: #FFE7E7;
+    background: #ffffff;
     overflow: hidden;
     height: 240px;
     position: relative;
@@ -445,6 +445,10 @@ body {
     padding: 0;
 }
 
+#image-icon {
+    color: #ffffff !important;
+}
+
 .project1-img,
 .project2-img,
 .project3-img {
@@ -452,10 +456,114 @@ body {
     width: 100%;
 }
 
-#image-icon {
-    color: #ffffff !important;
+@media screen and (max-width: 1400px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: -1.8em
+    }
 }
 
+@media screen and (max-width: 1200px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: -3.6em
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: -2.3em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: 3em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: 2em;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: -1.3em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: -1.8em;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .project1-img,
+    .project2-img,
+    .project3-img {
+        height: 100%;
+        position: absolute;
+        width: auto;
+        left: 1em;
+    }
+}
 
 /* PROJECTS PAGE */
 
@@ -483,6 +591,7 @@ body {
 
 .basic-1 .image-container img {
     object-fit: cover;
+    border-radius: 10px !important;
 }
 
 .basic-1 h2 {
@@ -522,15 +631,15 @@ body {
 }
 
 .projects-learn-more-btn {
-    color: white !important;
-    background-color: #944E63 !important;
+    color: #944E63 !important;
+    background-color: white !important;
     border-color: #944E63 !important;
     letter-spacing: 0.05em !important;
 }
 
 .projects-learn-more-btn:hover {
-    color: #944E63 !important;
-    background-color: white !important;
+    color: white !important;
+    background-color: #944E63 !important;
     border-color: #944E63 !important;
     letter-spacing: 0.05em !important;
 }
@@ -539,21 +648,21 @@ body {
     position:relative;
     height:calc(70vh);
     min-height:550px
- }
+}
  
- .inner-page .slider-item .slider-text{
-    color:#fff;
+.inner-page .slider-item .slider-text{
+    color:#ffffff;
     height:calc(50vh - 117px);
     min-height:550px
- }
+}
 
- .slider-item {
+.slider-item {
     height: 100vh;
     background-color: #ffffff !important;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-image: url("../images/projects-hero.png");
+    background-image: url("../images/heros/projects-hero.png");
 }
 
 .slider-item .slider-text {
@@ -570,7 +679,7 @@ body {
 .slider-item .slider-text h1 {
     font-family: 'Gotham', sans-serif !important; 
     font-size: 6rem;
-    color: #fff;
+    color: #ffffff;
     line-height: 1.2;
     font-weight: 700!important;
     margin-bottom: 30px;
@@ -584,7 +693,7 @@ body {
     box-shadow: 0.5em 0 0 #ffffff, -0.5em 0 0 #ffffff;
 }
 
-@media (max-width:991.98px) {
+@media (max-width: 991.98px) {
     .slider-item .slider-text h1 {
         font-size: 3rem;
     }
@@ -623,38 +732,3 @@ body {
     text-decoration: underline;
     color: #fff!important
 }
-
-
-/* Brand Guide Page */
-
-#brand-guide-header {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    padding-top: 9em !important;
-    padding-bottom: 6em !important;
-    background-color: #B47B84;
-    /* background-image: url("../images/.png"); */
-}
-
-.brand-guide-img-1,
-.brand-guide-img-2,
-.brand-guide-img-3,
-.brand-guide-img-4,
-.brand-guide-img-5,
-.brand-guide-img-6,
-.brand-guide-img-7,
-.brand-guide-img-8,
-.brand-guide-img-9 {
-    width: 65em;
-    height: 36em;
-    margin: 5em;
-}
-
-.container-fluid {
-    width:100% !important;
-    padding-right:15px !important;
-    padding-left:15px !important;
-    margin-right:auto !important;
-    margin-left:auto !important;
- }

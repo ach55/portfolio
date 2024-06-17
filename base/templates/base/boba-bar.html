@@ -1,50 +1,143 @@
 {% load static %}
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anaik Chacon</title>
-    <link href="{% static '/css/main.css'  %}" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link href="{% static '/css/projects.css'  %}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-     <!-- Nav Bar -->
-     <header class="bg-dark fixed-top">
+    <!-- Nav Bar -->
+    <header class="bg-dark fixed-top">
         <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
             <div class="container-fluid">
                 <div class="logo-div">
-                    <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
-                    <a class="navbar-brand navbar-text" href="/">Anaik Chacon</a>
+                    <a class="navbar-brand navbar-text ml-1" href="/">Anaik Chacon</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item mx-2"><a class="nav-link" href="#t">ABOUT</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="#contact">CONTACT</a></li> -->
+                <li class="nav-item mx-2"><a class="nav-link" href="/">HOME</a></li>
+                <li class="nav-item mx-2"><a class="nav-link" href="/projects">PROJECTS</a></li>
                 </div>
             </div>
         </nav>
     </header>
 
-    <footer>
-        <div class="container-xxl flex-wrap pt-3 d-flex align-items-center justify-content-between">
-            <p class="copyright">© 2024 Anaik Chacon</p>
-            <ul class="social-icons d-flex">
-                <a href="#" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
-                    <i id="footer-linkedin-logo" class="fa-brands fa-2xl fa-linkedin"></i>
-                </a>
-            </ul>
+    <!-- Hero -->
+    <div class="slider-item-boba-bar innerp overlay" data-stellar-background-ratio="0.5" id="hero">
+        <div class="container">
+          <div class="row slider-text align-items-center justify-content-center text-center">
+            <div class="col-lg-12 col-sm-12">
+              <h1 class="mb-4">The Boba Bar</h1>
+              <p class="custom-breadcrumbs"><a href="/projects">Projects</a> <span class="mx-3">/</span>The Boba Bar</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+      <!-- Project Details -->
+      <div class="section" id="projects-details-section">
+        <div class="w-80 p-5">
+          <div class="row mb-5">
+            <div class="col-lg-8">
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="main-page"class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-1.png' %}" alt="Boba Bar Main Page"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="introduction" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-2.png' %}" alt="Boba Bar Introduction"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="logos" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-3.png' %}" alt="Boba Bar Logos"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="colour-palette" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-4.png' %}" alt="Boba Bar Colour Palette"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="typography" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-5.png' %}" alt="Boba Bar Typography"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="elements-and-shapes" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-6.png' %}" alt="Boba Bar Elemenets and Shapes"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="mockups" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-7.png' %}" alt="Boba Bar Mockups"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="moodboard" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-8.png' %}" alt="Boba Bar Moodboard"></a>
+              <a href="" class="mb-5 d-block" data-fancybox="gal"><img id="social-media" class="img-fluid" src="{% static 'images/boba-bar-page-imgs/boba-bar-9.png' %}" alt="Boba Bar Social Media"></a>
+            </div>
+            <div class="col-lg-3 ml-auto">
+                <div class="block-fixed">
+                  <h3 class="mb-4"><strong class="d-block text-black">The Boba Bar</strong></h3>
+                  <ul class="list-unstyled mb-5">
+                    <li class="mb-3">
+                      <strong class="d-block text-black">Short overview:</strong>
+                      A brand case study for a bubble tea shop!
+                    </li>
+                    <li class="mb-3">
+                      <strong class="d-block text-black">Type of project:</strong>
+                      Design, branding, and website
+                    </li>
+                    <li class="mb-3">
+                      <strong class="d-block text-black">Client:</strong>
+                      A bubble tea shop (case study)
+                    </li>
+                    <br>
+                    <li class="mb-3">
+                      <strong class="d-block text-black">Table of contents:</strong>
+                    </li>
+                    <a class="smoothscroll toc-link" href="#main-page"><li class="toc-text mb-1">Main Page</li></a>
+                    <a class="smoothscroll toc-link" href="#introduction"><li class="toc-text mb-1">Introduction</li></a>
+                    <a class="smoothscroll toc-link" href="#logos"><li class="toc-text mb-1">Logos</li></a>
+                    <a class="smoothscroll toc-link" href="#colour-palette"><li class="toc-text mb-1">Colour Palette</li></a>
+                    <a class="smoothscroll toc-link" href="#typography"><li class="toc-text mb-1">Typography</li></a>
+                    <a class="smoothscroll toc-link" href="#elements-and-shapes"><li class="toc-text mb-1">Elements and Shapes</li></a>
+                    <a class="smoothscroll toc-link" href="#mockups"><li class="toc-text mb-1">Mockups</li></a>
+                    <a class="smoothscroll toc-link" href="#moodboard"><li class="toc-text mb-1">Moodboard</li></a>
+                    <a class="smoothscroll toc-link" href="#social-media"><li class="toc-text mb-1">Social Media</li></a>
+                    <br><br>
+                    <a href=""><button class="btn btn-lg btn-outline-light text-uppercase boba-bar-visit-website-btn">Visit Website</button></a>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
+            <p class="copyright my-0">© 2024 Anaik Chacon</p>
+            <a id="footer-back-to-top-link" class="smoothscroll" href="#hero">
+                <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 back-to-top-btn">
+                    Top <i id="footer-back-to-top-icon" class="fa-solid fa-circle-up fa-lg"></i>
+                </button>
+            </a>
+            <div class="footer-icons-div">
+                <ul class="social-icons mb-0 d-flex">
+                    <a href="" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none">
+                        <img class="footer-instagram-logo" src="{% static 'images/instagram-logo.png' %}" alt="Instagram logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
+                        <i id="footer-linkedin-logo" class="fa-brands fa-2x fa-linkedin"></i>
+                    </a>
+                </ul>
+            </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
+
+    <script>
+      document.querySelectorAll('.smoothscroll').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+              e.preventDefault();
+
+              const targetID = this.getAttribute('href').substring(1);
+              const targetElement = document.getElementById(targetID);
+
+              const offset = 115;
+
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+              window.scrollTo({
+                  top: offsetPosition,
+                  behavior: 'smooth'
+              });
+          });
+      });
+    </script>
 </body>
 </html>
