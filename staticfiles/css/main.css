@@ -167,7 +167,7 @@ body {
 }
 
 #projects {
-    padding-top: 9em;
+    padding-top: 8em;
     padding-bottom: 16em;
 }
 
@@ -205,6 +205,10 @@ body {
     background-position: center;
     background-color: #B47B84;
     background-image: url("../images/heros/contact-hero.png");
+}
+
+.contact-form-label {
+    color: #ffffff
 }
 
 .copyright {
@@ -279,7 +283,7 @@ body {
     }
 }
 
-/* Portfolio Section */
+/* portfolio section */
 
 .portfolio {
     padding: 60px 0;
@@ -563,6 +567,16 @@ body {
         width: auto;
         left: 1em;
     }
+}
+
+.form-floating input {
+    height: 3em;
+}
+
+/* 404 PAGE */
+
+.page-not-found-hero {
+    height: 100vh;
 }
 
 /* PROJECTS PAGE */

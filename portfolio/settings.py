@@ -26,7 +26,7 @@ SECRET_KEY = "django-insecure-m2dbj$8*j#c*&bdbh1^jm!b$wzi2z$+f(h_#z*q_rvvb%+t-xb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,8 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    'crispy_forms',
     "base",
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -56,7 +59,7 @@ ROOT_URLCONF = "portfolio.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -129,3 +132,8 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
+EMAIL_HOST_USER = '379affdd02dc64'
+EMAIL_HOST_PASSWORD = '603c26981fc206'
+EMAIL_PORT = '2525'

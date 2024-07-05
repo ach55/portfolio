@@ -1,4 +1,5 @@
 {% load static %}
+{% load crispy_forms_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +21,7 @@
             <div class="container-fluid">
                 <div class="logo-div">
                     <img class="logo" src="{% static 'images/logo.png' %}" alt="logo">
-                    <a class="navbar-brand navbar-text-home ml-1" href="/">Anaik Chacon</a>
+                    <a class="navbar-brand navbar-text-home ml-1" href="{% url 'home' %}">Anaik Chacon</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -119,7 +120,7 @@
                     <div class="portfolio-wrap">
                         <figure class="align-items-center">
                             <img class="project1-img" src="{% static 'images/brand-guide-cover.png' %}" alt="My brand's logo!">
-                            <a href="/brand-guide" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" >
+                            <a href="{% url 'brandguide' %}" data-gallery="portfolioGallery" class="link-preview portfolio-lightbox" >
                                 <i id="image-icon" class="fa-solid fa-arrow-up-right-from-square"></i>
                             </a>
                         </figure>
@@ -133,7 +134,7 @@
                 <div class="portfolio-wrap">
                     <figure class="align-items-center justify-content-center">
                         <img class="project2-img" src="{% static 'images/boba-bar-cover.png' %}" alt="The logo of a bubble tea company">
-                        <a href="/boba-bar" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery">
+                        <a href="{% url 'bobabar' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery">
                             <i id="image-icon" class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </figure>
@@ -147,7 +148,7 @@
                 <div class="portfolio-wrap">
                     <figure>
                         <img class="project3-img" src="{% static 'images/campsite-companions-cover.png' %}" alt="The logo of a outdoor company">
-                        <a href="/campsite-companions" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" >
+                        <a href="{% url 'campsitecompanions' %}" class="link-preview portfolio-lightbox" data-gallery="portfolioGallery" >
                             <i id="image-icon" class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                     </figure>
@@ -160,7 +161,7 @@
             </div>  
         </div>
         <div class="col-12 mt-5 mb-1 d-flex justify-content-center">
-            <a href="/projects">
+            <a href="{% url 'projects' %}">
                 <button class="btn btn-lg btn-outline-light text-uppercase projects-btn">More Projects</button>
             </a>
         </div> 
@@ -168,35 +169,53 @@
 
     <!-- Contact Me Section -->
     <section class="py-5" id="contact">
-        <div class="container py-5">
+        <div class="container pt-5">
             <div class="col-12 d-flex flex-column text-center justify-content-center">
                 <h2 class="text-white">CONTACT ME</h2>
                 <h5 class="text-white fw-normal py-2 fst-italic">If you have any questions about me or what I do, don't hesitate to ask!</h5>
             </div>
-            <div class="row pt-4 mt-5">
+            <div class="row mt-5">
                 <div class="col-12">
-                    <form action="#" method="POST">
+                    {% if success_message %}
+                        <div id="successMessage" class="alert alert-success text-center fixed-top w-100" style="display: none;">
+                            {{ success_message }}
+                        </div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function() {
+                                var successMessage = document.getElementById('successMessage');
+                                successMessage.style.display = 'block';
+                                setTimeout(function() {
+                                    successMessage.style.opacity = '0';
+                                    setTimeout(function() {
+                                        successMessage.style.display = 'none';
+                                    }, 1000);
+                                }, 8000);
+                            });
+                        </script>
+                    {% endif %}
+                    <form action="" method="POST">
+                        {% csrf_token %}
                         <div class="row d-flex justify-content-center mb-5">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 mb-3">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Name*" required>
-                                    <label for="floatingInput">Name*</label>
+                                    <p class="contact-form-label">Name</p>
+                                    {{ form.name|as_crispy_field }}
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingEmail" placeholder="Email*" required>
-                                    <label for="floatingEmail">Email*</label>
+                                    <p class="contact-form-label">Email</p>
+                                    {{ form.email|as_crispy_field }}
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Subject*" required>
-                                    <label for="floatingInput">Subject*</label>
+                                    <p class="contact-form-label">Subject</p>
+                                    {{ form.subject|as_crispy_field }}
                                 </div>
                             </div>
-                            <div class="form-floating col-lg-6">
-                                <textarea class="form-control" placeholder="Leave a comment here" id="floatingMessage" style="height: 205px" required></textarea>
-                                <label for="floatingMessage" class="px-4">Message*</label>
+                            <div class="form-floating col-lg-6 mb-3">
+                                <p class="contact-form-label">Message</p>
+                                {{ form.message|as_crispy_field }}
                             </div>
                             <div class="col-12 mt-5 d-flex justify-content-center">
-                                <button class="btn btn-lg btn-outline-light contact-btn">SEND</button>
+                                <button class="btn btn-lg btn-outline-light contact-btn" type="submit">SEND</button>
                             </div>
                         </div>
                     </form>
@@ -204,7 +223,7 @@
             </div>
         </div>
     </section>
-
+           
     <!-- Footer -->
     <footer>
         <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
@@ -226,7 +245,15 @@
             </div>
         </div>
     </footer>
-    
+
+    <script>
+        // Clear form fields when the page is refreshed
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactForm = document.getElementById('contactForm');
+            contactForm.reset(); // Reset the form fields
+        });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
