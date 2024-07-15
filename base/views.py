@@ -1,7 +1,6 @@
-from django.shortcuts import render, redirect
-from django.http import HttpResponseRedirect
-from .forms import ContactForm
+from django.shortcuts import render
 from django.core.mail import EmailMessage
+from .forms import ContactForm
 
 def home(request):
     success_message = None
@@ -24,15 +23,13 @@ def home(request):
                 print("Attempting to send email...")
                 email_message.send()
                 print("Email sent successfully!")
+                success_message = "Your message has been sent successfully!"
             except Exception as e:
                 print(f"Failed to send email: {e}")
-
-            success_message = "Your message has been sent successfully!"
-
-            return HttpResponseRedirect(request.path_info + '?submitted=True')
+                success_message = "There was an error sending your message. Please try again later."
     else:
         form = ContactForm()
-    
+
     return render(request, 'base/home.html', {'form': form, 'success_message': success_message})
 
 def projects(request):
@@ -46,6 +43,15 @@ def bobabar(request):
 
 def campsitecompanions(request):
     return render(request, 'base/campsite-companions.html')
+
+def communicationscertificate(request):
+    return render(request, 'base/communications-certificate.html')
+
+def potterycompanyrebrand(request):
+    return render(request, 'base/pottery-company-rebrand.html')
+
+def crochet(request):
+    return render(request, 'base/crochet-project.html')
 
 # custom 404
 def custom_404(request, exception):

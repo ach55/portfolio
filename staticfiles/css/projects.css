@@ -50,12 +50,14 @@ body {
    height:calc(70vh);
    min-height:550px
 }
+
 .inner-page .slider-item .slider-text,
 .inner-page .slider-item-brand-guide .slider-text {
    color:#fff;
    height:calc(50vh - 117px);
    min-height:550px
 }
+
 #footer-back-to-top-icon {
    color : #ffffff;
    margin-left: 0.2em;
@@ -129,10 +131,20 @@ body {
    background-image: url("../images/heros/campsite-companions-hero.png");
 }
 
+.slider-item-communications-certificate {
+   height: 100vh;
+   background-color: #ffffff !important;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   background-image: url("../images/heros/communications-certificate-hero.png");
+}
+
 .slider-item:before,
 .slider-item-brand-guide:before,
 .slider-item-boba-bar:before,
-.slider-item-campsite-companions:before {
+.slider-item-campsite-companions:before,
+.slider-item-communications-certificate:before {
    content:"";
    position:absolute;
    top:0;
@@ -145,7 +157,8 @@ body {
 .slider-item .slider-text,
 .slider-item-brand-guide .slider-text,
 .slider-item-boba-bar .slider-text,
-.slider-item-campsite-companions .slider-text {
+.slider-item-campsite-companions .slider-text,
+.slider-item-communications-certificate .slider-text {
    color:#fff;
    height:calc(100vh);
    min-height:700px
@@ -154,7 +167,8 @@ body {
 .slider-item .slider-text .child-name
 .slider-item-brand-guide .slider-text .child-name 
 .slider-item-boba-bar .slider-text .child-name,
-.slider-item-campsite-companions .slider-text .child-name {
+.slider-item-campsite-companions .slider-text .child-name,
+.slider-item-communications-certificate .slider-text .child-name {
    font-size:40px;
    color:#fff
 }
@@ -162,7 +176,8 @@ body {
 .slider-item .slider-text h1,
 .slider-item-brand-guide .slider-text h1,
 .slider-item-boba-bar .slider-text h1,
-.slider-item-campsite-companions .slider-text h1 {
+.slider-item-campsite-companions .slider-text h1,
+.slider-item-communications-certificate .slider-text h1 {
    font-family: 'Gotham', sans-serif !important; 
    font-size:6rem;
    color:#fff;
@@ -174,7 +189,8 @@ body {
 .slider-item .slider-text h1 span,
 .slider-item-brand-guide .slider-text h1 span 
 .slider-item-boba-bar .slider-text h1 span,
-.slider-item-campsite-companions .slider-text h1 span {
+.slider-item-campsite-companions .slider-text h1 span,
+.slider-item-ccommunications-certificate .slider-text h1 span {
    font-family: 'Gotham', sans-serif !important; 
    color:white;
 }
@@ -183,7 +199,8 @@ body {
    .slider-item .slider-text h1,
    .slider-item-brand-guide .slider-text h1,
    .slider-item-boba-bar .slider-text h1,
-   .slider-item-campsite-companions .slider-text h1 {
+   .slider-item-campsite-companions .slider-text h1,
+   .slider-item-communications-certificate .slider-text h1 {
        font-size:3rem
    }
 }
@@ -191,7 +208,8 @@ body {
 .slider-item .slider-text p,
 .slider-item-brand-guide .slider-text p,
 .slider-item-boba-bar .slider-text p, 
-.slider-item-campsite-companions .slider-text p {
+.slider-item-campsite-companions .slider-text p,
+.slider-item-communications-certificate .slider-text p {
    line-height:1.5;
    font-weight:300;
    color:white;
@@ -201,14 +219,16 @@ body {
 .slider-item .slider-text p a,
 .slider-item-brand-guide .slider-text p a,
 .slider-item-boba-bar .slider-text p a,
-.slider-item-campsite-companions .slider-text p a {
+.slider-item-campsite-companions .slider-text p a,
+.slider-item-communications-certificate .slider-text p a {
    text-decoration:underline
 }
 
 .slider-item .slider-text p a:hover,
 .slider-item-brand-guide .slider-text p a:hover,
 .slider-item-boba-bar .slider-text p a:hover,
-.slider-item-campsite-companions .slider-text p a:hover {
+.slider-item-campsite-companions .slider-text p a:hover,
+.slider-item-communications-certificate .slider-text p a:hover {
    color:#fff;
    text-decoration:underline
 }
@@ -216,7 +236,8 @@ body {
 .slider-item .slider-text p.sub-text,
 .slider-item-brand-guide .slider-text p.sub-text,
 .slider-item-boba-bar .slider-text p.sub-text,
-.slider-item-campsite-companions .slider-text p.sub-text {
+.slider-item-campsite-companions .slider-text p.sub-text,
+.slider-item-communications-certificate .slider-text p.sub-text {
    line-height:2
 }
 
@@ -224,7 +245,7 @@ body {
    font-size:1.5rem!important
 }
 
-.custom-breadcrumbs a{
+.custom-breadcrumbs a {
    display:inline-block;
    font-size:1.5rem!important;
    text-decoration:underline;

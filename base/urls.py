@@ -8,5 +8,8 @@ urlpatterns = [
     path('projects', views.projects, name='projects'),
     path('brand-guide', views.brandguide, name='brandguide'),
     path('boba-bar', views.bobabar, name='bobabar'),
-    path('campsite-companions', views.campsitecompanions, name='campsitecompanions')
+    path('campsite-companions', views.campsitecompanions, name='campsitecompanions'),
+    path('communications-certificate', views.communicationscertificate, name='communicationscertificate'),
+    path('pottery-company-rebrand', views.potterycompanyrebrand, name='potterycompanyrebrand'),
+    path('crochet', views.crochet, name='crochet'),
 ]
