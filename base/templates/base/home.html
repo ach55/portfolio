@@ -177,7 +177,7 @@
             <div class="row mt-5">
                 <div class="col-12">
                     <div id="successMessage" class="alert alert-success text-center fixed-top w-100" style="display: none;">
-                        <i class="fa-regular fa-circle-check"></i>  Thanks for your message, the form below has been sent successfully!
+                        <i class="fa-regular fa-circle-check"></i> Thanks for your message! The form below has been sent successfully!
                     </div>
                     <form id="contactForm" action="" method="POST">
                         {% csrf_token %}
@@ -253,8 +253,8 @@
                             document.getElementById('successMessage').style.opacity = '0';
                             setTimeout(function() {
                                 document.getElementById('successMessage').style.display = 'none';
-                            }, 6000);
-                        }, 6000);
+                            }, 7000);
+                        }, 7000);
                         form.reset();
                     }
                 }).catch(error => {
