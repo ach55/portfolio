@@ -53,6 +53,12 @@ def potterycompanyrebrand(request):
 def crochet(request):
     return render(request, 'base/crochet-project.html')
 
+def bobabarlandingpage(request):
+    return render(request, 'base/boba-bar-landing-page.html')
+
+def campsitecompanionslandingpage(request):
+    return render(request, 'base/campsite-companions-landing-page.html')
+
 # custom 404
 def custom_404(request, exception):
     return render(request, '404.html', status=404)

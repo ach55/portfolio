@@ -318,6 +318,21 @@ body {
    letter-spacing: 0.05em !important;
 }
 
+.wei-visit-website-btn {
+   background-color: #88a9c3 !important;
+   color: #ffffff !important;
+   letter-spacing: 0.05em !important;
+   text-align: center !important;
+   margin-right: 2em !important;
+}
+
+.wei-visit-website-btn:hover {
+   background-color: #ffffff !important;
+   color: #88a9c3 !important;
+   border-color: #88a9c3 !important;
+   letter-spacing: 0.05em !important;
+}
+
 /* Bootstrap and other css */
 
 .list-unstyled{
