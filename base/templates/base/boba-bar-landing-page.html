@@ -1,1 +1,487 @@
-boba bar landing page
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <title>The Boba Bar HFX Landing Page</title>
+
+   <link href="{% static '/css/boba-bar-landing-page-extra-css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+   <link href="{% static '/css/boba-bar-landing-page.css'  %}" rel="stylesheet" type="text/css">
+   <link href="{% static '/css/boba-bar-landing-page-extra-css/responsive.css' %}" rel="stylesheet" type="text/css">
+   <link href="{% static '/css/boba-bar-landing-page-extra-css/jquery.mCustomScrollbar.min.css' %}" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+   <link href="{% static '/css/boba-bar-landing-page-extra-css/owl.carousel.min.css' %}" rel="stylesheet" type="text/css">
+   <link href="{% static '/css/boba-bar-landing-page-extra-css/owl.theme.default.min.css' %}" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div class="header_section" id="home">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <div class="logo">
+            <a href="">
+                <img class="boba-bar-logo ml-1 mt-3" src="{% static 'images/boba-bar-landing-page-imgs/boba-bar-lp-logo.png' %}" alt="logo">
+            </a>
+        </div>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+               <a class="nav-item nav-link" href="#home">Home</a>
+               <a class="nav-item nav-link" href="#about">About</a>
+               <a class="nav-item nav-link" href="#menu">Menu</a>
+               <a class="nav-item nav-link" href="#testimonials">Testimonials</a>
+               <a class="nav-item nav-link" href="#contact">Contact</a>
+            </div>
+         </div>
+         <div class="login_menu">
+            <img class="boba-bar-search-icon" src="{% static 'images/boba-bar-landing-page-imgs/search-icon.png' %}" alt="Search Icon">
+         </div>
+      </nav>
+
+      <!-- Header -->
+      <div class="banner_section layout_padding_header">
+         <div id="main_slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container" style="height: 20%">
+                     <div class="row">
+                        <div class="col-md-8">
+                           <h1 class="banner_taital">Redefining the traditional</h1>
+                           <p class="banner_subtext">Come on in and let us elevate your bubble tea experience!</p>
+                           <div class="home_bt"><a href="#about"><strong>Explore more</strong></a></div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <h1 class="banner_taital">Blending classic and trendy flavours</span></h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <h1 class="banner_taital"></span>Delivering the ultimate bar atmosphere</h1>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+            </a>
+         </div>
+      </div>
+   </div>
+
+   <!-- About Section -->
+   <div class="about_section layout_padding" id="about">
+      <div id="my_main_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="about_main">
+                           <h1 class="about_taital">Our Story</h1>
+                           <p class="about_text">
+                              Hsin-Yi Chou grew up in Taipei, Taiwan.
+                              From a young age, Hsin-Yi was captivated by the art of tea-making since her parents owned a small tea shop and she spent countless hours watching her mother and father brew tea.
+                              The shop was a community hub, where people gathered to relax, chat, and enjoy a moment of peace amidst the busy city life.
+                              As Hsin-Yi grew older, she pursued her passion for tea by studying culinary arts in Taipei.
+                              Her dream was always to create a relaxing space where people could experience the true essence of tea, like her parents did.
+                              After completing her studies, Hsin-Yi moved to Halifax, Nova Scotia, a city known for its vibrant culture and welcoming community.
+                              She saw an opportunity to bring the essence of her Taiwanese heritage to Halifax by introducing a new concept in bubble tea culture.
+                           </p>
+                           <div class="readmore_bt"><a href="#about">Learn More</a></div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="image_2">
+                           <img class="our-story-img" src="{% static 'images/boba-bar-landing-page-imgs/about-img-1.png' %}" alt="Taipei">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="about_main">
+                           <h1 class="about_taital">Our Values</h1>
+                           <p class="about_text">
+                              <span class="about_text_span"><strong>Quality:</strong></span> At The Boba Bar, we are committed to delivering the highest quality in every cup. From our sourcing to our use of fresh ingredients, we ensure that every drink meets high standards.<br><br>
+                              <span class="about_text_span"><strong>Innovation:</strong></span> Our menu features unique creations you have never tasted before and our goal is to give customers a one-of-a-kind experience.<br><br>
+                              <span class="about_text_span"><strong>Community:</strong></span> Life can be hectic, and we aim to provide a safe space for everyone. The Boba Bar is more than just a place to get a drink; it's a gathering spot for friends, family, and neighbors. We strive to create a welcoming environment where everyone feels at home.
+                           </p>
+                           <div class="readmore_bt"><a href="#about">Learn More</a></div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="image_2">                        
+                           <img class="our-values-img" src="{% static 'images/boba-bar-landing-page-imgs/about-img-2.png' %}" alt="Restaurant">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-6">
+                        <div class="about_main">
+                           <h1 class="about_taital">Our Teas</h1>
+                           <p class="about_text">
+                              At The Boba Bar, we love to push the boundaries of tea by experimenting with new and exciting flavors.
+                              Our innovative approach means that we're constantly creating new combinations that incorporate a splashes of your favorite alcoholic beverages.
+                              Whether it's a classic cocktail twist or a classic mocktail, our fusions offer a delightful experience that's both refreshing and comforting!
+                           </p>
+                           <div class="readmore_bt"><a href="#about">Learn More</a></div>
+                        </div>
+                     </div>
+                     <div class="col-md-6">
+                        <div class="image_2">
+                           <img class="our-teas-img" src="{% static 'images/boba-bar-landing-page-imgs/about-img-3.png' %}" alt="Matcha Bubble Tea">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-next" href="#my_main_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+         </a>
+      </div>
+   </div>
+
+   <!-- Menu Section -->
+   <div class="services_section layout_padding_menu" id="menu">
+      <div class="container">
+         <h1 class="services_taital">Our Menu</h1>
+         <p class="services_text">At The Boba Bar, we like to mix classic boba flavours with your favourite alcoholic drink. 
+            You can order any of our drinks below or ask our bartnerders for a unique mix!<br><br>
+            <strong>Note:</strong>  We also do mocktails and regular bubble tea!
+         </p>
+         <div class="services_section_2 my-5">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-1" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-1.png' %}" alt="Milk Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10 active"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Baileys Milk Tea</h6>
+                        <h1 class="price_text">$9</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-2" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-2.png' %}" alt="Brown Sugar Milk Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Bourbon Brown<br>Sugar Milk Tea</h6>
+                        <h1 class="price_text">$10</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-3" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-3.png' %}" alt="Milk Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Gin Matcha Tea</h6>
+                        <h1 class="price_text">$14</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-4" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-4.png' %}" alt="Matcha Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Taro & Coconut<br>Rum Milk Tea</h6>
+                        <h1 class="price_text">$12</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-5" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-5.png' %}" alt="Taro Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Tequila Passion<br>Fruit Milk Tea</h6>
+                        <h1 class="price_text">$10</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-6" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-6.png' %}" alt="Passion Fruit Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Champagne<br>Strawberry Tea</h6>
+                        <h1 class="price_text">$14</h1>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="see_bt"><a href="#menu">See More</a></div>
+      </div>
+   </div>
+
+   <!-- Testimonials Section -->
+   <div class="clients_section" id="testimonials">
+      <div id="custum_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <h1 class="clients_taital">Client Testimonial</h1>
+                  <p class="clients_text">The Boba Bar is my new favorite spot in Halifax! The atmosphere is so relaxing, and the bubble tea options are endless. I love going there after work, feels like a mini vacation!</p>
+                  <div class="client_img">
+                     <img class="client-img-1" src="{% static 'images/boba-bar-landing-page-imgs/client-img-1.png' %}" alt="Image of a man">
+                  </div>
+                  <h1 class="louis_text mt-2">Mark S.</h1>
+                  <h1 class="smyth_text"></h1>
+                  <div class="border"></div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <h1 class="clients_taital">Vendor Testimonial</h1>
+                  <p class="clients_text">Working with The Boba Bar has been an absolute pleasure. They are passionate about using high-quality ingredients and it shows in every cup of tea they serve. We are proud to supply them with our premium tea leaves.</p>
+                  <div class="client_img">
+                     <img class="client-img-2" src="{% static 'images/boba-bar-landing-page-imgs/client-img-2.png' %}" alt="">
+                  </div>
+                  <h1 class="louis_text mt-2">Director of Quality Assurance at Verdant Leaf Suppliers, Aisha D.</h1>
+                  <h1 class="smyth_text"></h1>
+                  <div class="border"></div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <h1 class="clients_taital">Client Testimonial</h1>
+                  <p class="clients_text">From the moment I walked in, I knew The Boba Bar was something special. The ambiance is inviting, and the staff are super friendly. My favorite is the strawberry basil boba with a hint of gin — so refreshing!</p>
+                  <div class="client_img">
+                     <img class="client-img-3" src="{% static 'images/boba-bar-landing-page-imgs/client-img-3.png' %}" alt="Image of a woman">
+                  </div>
+                  <h1 class="louis_text mt-2">Kelly R.</h1>
+                  <h1 class="smyth_text"></h1>
+                  <div class="border"></div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#custum_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-left"></i>
+         </a>
+         <a class="carousel-control-next" href="#custum_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+         </a>
+      </div>
+   </div>
+
+   <!-- Contact Section -->
+   <div class="contact_section layout_padding" id="contact">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="mail_main">
+                  <h1 class="contact_taital">Contact us</h1>
+                  <form action="/action_page.php">
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Name" name="Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Email" name="Email">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Subject" name="Email">
+                     </div>
+                     <div class="form-group">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+                     </div>
+                  </form>
+                  <div class="send_btn">
+                     <div class="main_bt"><a href="#">Send</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="map_main">
+                  <div class="map-responsive">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.9466957021936!2d-63.58268798446276!3d44.64886247909964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a222bdd9b1fc7%3A0xa16c4b6bb5e9eefe!2sHalifax%20Citadel%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1592225691364!5m2!1sen!2sca"
+                        width="600" height="600" frameborder="0" style="border:0; width: 100%;"
+                        allowfullscreen=""></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Footer -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="newsletter_section">
+            <div class="newsletter_left">
+               <div class="footer_logo"><img src="images/footer-logo.png"></div>
+            </div>
+            <div class="newsletter_right">
+               <h5 class="newsletter_taital">Subscribe Newsletter</h5>
+               <div class="subscribe_main">
+                  <input type="text" class="mail_text" placeholder="Enter your email" name="text">
+                  <div class="subscribe_bt"><a href="#">Subscribe</a></div>
+               </div>
+            </div>
+         </div>
+         <div class="footer_taital_main">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">About</h2>
+                  <p class="ipsum_text">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                     dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation u</p>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Menus</h2>
+                  <div class="footer_links">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Useful Link</h2>
+                  <div class="footer_links">
+                     <ul>
+                        <li><a href="#">Adipiscing</a></li>
+                        <li><a href="#">Elit, sed do</a></li>
+                        <li><a href="#">Eiusmod </a></li>
+                        <li><a href="#">Tempor </a></li>
+                        <li><a href="#">incididunt</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h2 class="useful_text">Contact us</h2>
+                  <div class="addres_link">
+                     <ul>
+                        <li><a href="#"><img src="images/map-icon.png"><span class="padding_left_10">No.123 Chalingt
+                                 Gates</span></a></li>
+                        <li><a href="#"><img src="images/call-icon.png"><span class="padding_left_10">+01
+                                 1234567890</span></a></li>
+                        <li><a href="#"><img src="images/mail-icon.png"><span
+                                 class="padding_left_10">demo@gmail.com</span></a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <h1 class="follow_text">Follow Us</h1>
+            <div class="social_icon">
+               <ul>
+                  <li><a href="#"><img src="images/fb-icon.png"></a></li>
+                  <li><a href="#"><img src="images/twitter-icon.png"></a></li>
+                  <li><a href="#"><img src="images/linkedin-icon.png"></a></li>
+                  <li><a href="#"><img src="images/instagram-icon.png"></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text mb-5">Copyright 2022 The Boba Bar. Theme from the <a href="https://themewagon.com">ThemeWagon</a></p>
+      </div>
+   </div>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="{% static '/js/boba-bar-landing-page-js/jquery.min.js' %}"></script>
+   <script src="{% static '/js/boba-bar-landing-page-js/popper.min.js' %}"></script>
+   <script src="{% static '/js/boba-bar-landing-page-js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static '/js/boba-bar-landing-page-js/jquery-3.0.0.min.js' %}"></script>
+   <script src="{% static '/js/boba-bar-landing-page-js/plugin.js' %}"></script>
+   <!-- sidebar -->
+   <script src="{% static '/js/boba-bar-landing-page-js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+   <script src="{% static '/js/boba-bar-landing-page-js/custom.js' %}"></script>
+   <!-- javascript -->
+   <script src="{% static '/js/boba-bar-landing-page-js/owl.carousel.js' %}"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script>
+        $(document).ready(function () {
+            $(".fancybox").fancybox({
+                openEffect: "none",
+                closeEffect: "none"
+            });
+        });
+   </script>
+   <script>
+        $(document).ready(function () {
+            // Add minus icon for collapse element which is open by default
+            $(".collapse.show").each(function () {
+                $(this).prev(".card-header").find(".fa").addClass("fa-minus").removeClass("fa-plus");
+            });
+
+            // Toggle plus minus icon on show hide of collapse element
+            $(".collapse").on('show.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-plus").addClass("fa-minus");
+            }).on('hide.bs.collapse', function () {
+                $(this).prev(".card-header").find(".fa").removeClass("fa-minus").addClass("fa-plus");
+            });
+        });
+   </script>
+</body>
+
+</html>
