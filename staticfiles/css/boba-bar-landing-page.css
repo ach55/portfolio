@@ -1,5 +1,3 @@
-
-
 @import url(animate.min.css);
 @import url(normalize.css);
 @import url(icomoon.css);
@@ -205,7 +203,7 @@ button {
 }
 
 .layout_padding_menu {
-    padding-top: 50px;
+    padding-top: 130px;
     padding-bottom: 100px;
 }
 
@@ -217,7 +215,7 @@ button {
     width: 100%;
     height: 100vh;
     float: left;
-    background-image: url(../images/boba-bar-landing-page-imgs/boba6.png);
+    background-image: url(../images/boba-bar-landing-page-imgs/boba3.png);
     background-size: cover;
 }
 
@@ -272,8 +270,7 @@ button {
 }
 
 .banner_taital {
-    /* width: 70%; */
-    font-size: 70px;
+    font-size: 60px;
     color: #d9bad7;
     padding-top: 20px;
     text-transform: uppercase;
@@ -286,7 +283,6 @@ button {
     color: #d9bad7;
     padding-left: 0px;
     padding-right: 0px;
-    /* text-transform: uppercase; */
     line-height: 40px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -299,7 +295,7 @@ button {
 
 #main_slider a.carousel-control-next {
     position: absolute;
-    left: 35px;
+    left: 55px;
     top: 120%;
     background: #d9bad7;
     color: #fff;
@@ -353,7 +349,7 @@ i.fa.fa-angle-left {
     height: 100vh;
     float: left;
     /* background-color: #d9bad7; */
-    padding-bottom: 90px;
+    padding-bottom: 130px;
 }
 
 .about_main {
@@ -367,7 +363,7 @@ i.fa.fa-angle-left {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #171717;
+    color: #500c4b;
     font-weight: bold;
     padding-top: 14px;
     padding-bottom: 0px;
@@ -392,13 +388,13 @@ i.fa.fa-angle-left {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #171717;
+    color: #500c4b;
     margin: 0px;
 }
 
 .about_text_span,
 .teas_text_span {
-    color: #d9bad7;
+    color: #500c4b;
 }
 
 .boba-bar-learn-more-btn {
@@ -417,26 +413,26 @@ i.fa.fa-angle-left {
     border-color: #d9bad7;
 }
 
-.home_bt {
+.banner_bt {
     width: 180px;
     float: left;
-    margin-top: 50px;
-    border-radius: 10px;
+    margin-top: 25px;
+    border-radius: 4px;
 }
 
-.home_bt a {
+.banner_bt a {
     width: 100%;
     float: left;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 4px;
     color: #ffffff;
     background-color: #d9bad7;
     text-align: center;
     padding: 12px 0px;
 }
 
-.home_bt a:hover {
-    border-radius: 10px;
+.banner_bt a:hover {
+    border-radius: 4px;
     color: #010101;
     background-color: #f1f1f1;
 }
@@ -590,27 +586,21 @@ i.fa.fa-angle-left {
 }
 
 .services_section {
-    /* width: 100%;
-    height: 100vh;
-    float: left;
-    background-image: url(../images/boba-bar-landing-page-imgs/boba5.png);
-    background-size: cover */
     width: 100%;
-    /* height: 100vh; */
-    background-image: url(../images//boba-bar-landing-page-imgs/.png);
+    background-image: url(../images//boba-bar-landing-page-imgs/purple-waves.png);
     background-repeat: no-repeat;
     background-size: 1920px;
     float: left;
-    padding-bottom: 90px;
+    padding-bottom: 190px;
 }
 
 .services_taital {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #171717;
+    color: #500c4b;
     font-weight: bold;
-    padding-top: 14px;
+    padding-top: 45px;
     padding-bottom: 0px;
     margin-bottom: 0.5em;
 }
@@ -633,7 +623,7 @@ i.fa.fa-angle-left {
     width: 100%;
     float: left;
     font-size: 16px;
-    color: #171717;
+    color: #500c4b;
     margin: 0px;
 }
 
@@ -712,7 +702,7 @@ i.fa.fa-angle-left {
 }
 
 .box_main:hover {
-    background-color: #d9bad7;
+    background-color: #500c4b;
 }
 
 .box_main:hover .border_10 {
@@ -720,11 +710,16 @@ i.fa.fa-angle-left {
 }
 
 .box_main.active {
-    background-color: #d9bad7;
+    background-color: #500c4b;
 }
 
 .box_main.active .border_10 {
     background-color: #ffffff;
+}
+
+.box_main:hover .price_text,
+.box_main:hover .milk_text {
+    color: #ffffff;
 }
 
 .choose_section {
@@ -966,18 +961,17 @@ i.fa.fa-angle-left {
     width: 100%;
     height: 100vh !important;
     float: left;
-    /* background-image: url(../images/client-bg.png); */
     height: auto;
     background-size: 100%;
-    padding-top: 15%;
-    padding-bottom: 10%;
+    padding-top: 13%;
+    padding-bottom: 13%;
 }
 
 .clients_taital {
     width: 41%;
     margin: 0 auto;
     font-size: 44px;
-    color: #0d0d0c;
+    color: #500c4b;
     text-align: center;
     font-weight: bold;
 }
@@ -1000,7 +994,7 @@ i.fa.fa-angle-left {
     width: 60%;
     margin: 0 auto;
     font-size: 16px;
-    color: #0d0d0c;
+    color: #500c4b;
     text-align: center;
     padding-top: 30px;
 }
@@ -1023,7 +1017,7 @@ i.fa.fa-angle-left {
     float: left;
     font-size: 18px;
     text-align: center;
-    color: #070705;
+    color: #500c4b;
     padding-bottom: 0;
     padding-top: 10px;
 }
@@ -1089,17 +1083,21 @@ i.fa.fa-angle-left {
 
 .contact_section {
     width: 100%;
+    height: 100vh;
     float: left;
     padding-bottom: 90px;
+    background-image: url(../images//boba-bar-landing-page-imgs/blue-waves.png);
+    background-repeat: no-repeat;
+    background-size: 1920px;
 }
 
 .contact_taital {
     width: 100%;
     float: left;
     font-size: 40px;
-    color: #2b2a2a;
+    color: #F8f5ee;
     font-weight: bold;
-    padding-top: 25px;
+    padding-top: 50px;
     margin-bottom: 80px;
 }
 
@@ -1117,6 +1115,10 @@ i.fa.fa-angle-left {
     transform: translateY(-50%);
 }
 
+.map-responsive {
+    padding: 60px;
+}
+
 .mail_main {
     width: 100%;
     float: left;
@@ -1126,31 +1128,31 @@ i.fa.fa-angle-left {
 .email-bt {
     background: transparent;
     border: none;
-    color: #939494;
+    color: #f8f5ee;
     width: 100%;
     height: auto;
     font-size: 16px;
-    border-bottom: 1px solid #939494;
+    border-bottom: 1px solid #f8f5ee;
 }
 
 input.email-bt::placeholder {
-    color: #939494;
+    color: #f8f5ee;
 }
 
 .massage-bt {
     background: transparent;
     border: none;
-    color: #939494;
+    color: #f8f5ee;
     width: 100%;
     height: 100px;
     font-size: 16px;
     padding: 70px 20px 0px 0px;
-    border-bottom: 1px solid #939494;
+    border-bottom: 1px solid #f8f5ee;
     padding-left: 0px;
 }
 
 textarea.massage-bt::placeholder {
-    color: #939494;
+    color: #f8f5ee;
 }
 
 .send_btn {
@@ -1161,9 +1163,9 @@ textarea.massage-bt::placeholder {
 
 .main_bt a {
     background: #d9bad7;
-    border: none;
+    border-radius: 4px;
     color: #fff;
-    font-size: 22px;
+    font-size: 16px;
     width: 100%;
     float: left;
     text-align: center;
@@ -1171,12 +1173,14 @@ textarea.massage-bt::placeholder {
 }
 
 .main_bt a:hover {
-    background-color: #101010;
-    color: #ffffff;
-}
+    border-radius: 4px;
+    color: #010101;
+    background-color: #f1f1f1;
+}  
 
 .footer_section {
     width: 100%;
+    height: 100vh;
     float: left;
     background-image: url(../images/footer-bg.png);
     height: auto;
