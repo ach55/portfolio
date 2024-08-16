@@ -51,7 +51,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
   font-weight: normal;
   line-height: 1.625em;
 }
@@ -2349,10 +2348,23 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.hero-btn {
+.hero-btn,
+.menu-btn {
   background: #698ebf;
   border: 1px solid transparent;
   color: #f8f5ee;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 15px;
+}
+
+.about-btn {
+  background: #698ebf;
+  border: 1px solid transparent;
+  color: #f8f5ee;
+  margin-top: 2em;
   padding-left: 40px;
   padding-right: 40px;
   padding-top: 10px;
@@ -2364,6 +2376,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #f8f5ee;
   background: transparent;
   color: #f8f5ee;
+}
+
+.menu-btn:hover,
+.about-btn:hover {
+  border: 1px solid #698ebf;
+  background: transparent;
+  color: #698ebf;
+}
+
+.menu-btn-div {
+  width: 100%
 }
 
 .primary-btn {
@@ -2381,74 +2404,242 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  .video-sec-area {
-    /* height: 0; */
-    padding-top: 0px;
-    /* padding-bottom: 0px; */
-  }
+.about_section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video-left {
-  padding-left: 10%;
+.carousel-inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.video-left h6 {
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; 
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.5);
+  /* background-image: url(../images//boba-bar-landing-page-imgs/purple-waves.png); */
+  border: none;
+  z-index: 10; 
+}
+
+.carousel-control-prev {
+  left: -300px;
+}
+
+.carousel-control-next {
+  right: -300px;
+}
+
+.our-story-img,
+.our-values-img,
+.our-teas-img {
+  margin-left: 2em;
+  width: 30em;
+  height: 30em;
+}
+
+
+.left-div {
+  padding-left: 7%;
+}
+
+.left-div h6 {
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #b68834;
   font-size: 12px;
   font-weight: 300;
 }
 
-.video-left h1 {
+.left-div h1 {
   padding-bottom: 20px;
 }
 
-.video-left p span {
+.left-div p span {
   color: #000;
   font-weight: 400;
 }
 
 @media (max-width: 960px) {
-  .video-left {
+  .left-div{
     margin-top: 50px;
   }
 }
 
-.video-right {
+.right-div {
   background: url(../images/boba-bar-landing-page-imgs/about-1.jpg) no-repeat center;
   background-size: cover;
   height: 350px;
-  width: 540px;
   border-radius: 10px;
 }
 
-.video-right .overlay-bg {
+.right-div .overlay-bg {
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.78);
 }
 
-.video-right .play-btn {
+.right-div .play-btn {
   z-index: 2;
 }
 
 @media (max-width: 800px) {
-  .video-right {
+  .right-div {
     margin-top: 100px;
   }
 }
 
-/* .video-sec-area {
-  height: 100vh;
-  padding-top: 18em;
-  padding-bottom: 10em;
-} */
-
-.menu-area {
-  background: url(../images/img/menu-bg.jpg) center;
-  background-size: cover;
+.layout_padding_menu {
+  padding-top: 100px;
 }
+
+.services_section {
+  width: 100%;
+  float: left;
+  padding-bottom: 190px;
+}
+
+.services_taital {
+  width: 100%;
+  float: left;
+  font-size: 40px;
+  color: #000;
+  font-weight: bold;
+  padding-top: 45px;
+  padding-bottom: 0px;
+  margin-bottom: 0.5em;
+}
+
+.services_taital::after {
+  content: '';
+  position: absolute;
+  background-image: url(../images/cup-icon.png);
+  height: 53px;
+  width: 50px;
+  left: -70px;
+  top: 50%;
+  right: initial;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  transform: translateY(-50%);
+}
+
+.services_text {
+  width: 100%;
+  float: left;
+  font-size: 16px;
+  color: #000;
+  margin: 0px;
+}
+
+.services_section_2 {
+  width: 100%;
+  float: left;
+}
+
+.menu-item-1,
+.menu-item-2,
+.menu-item-3,
+.menu-item-4,
+.menu-item-5,
+.menu-item-6 {
+  width: 8em;
+  height: 8em;
+  border-radius: 50%;
+}
+
+.box_main {
+  width: 100%;
+  float: left;
+  background-color: #f1f1f1;
+  height: auto;
+  border-radius: 5px;
+  padding: 90px 0px 70px 0px;
+  margin-top: 30px;
+}
+
+.left_main {
+  width: 50%;
+  float: left;
+}
+
+.middle_main {
+  width: 2%;
+  float: left;
+}
+
+.right_main {
+  width: 48%;
+  float: left;
+}
+
+.cup_img_1 {
+  width: 100%;
+  float: left;
+  text-align: center;
+  min-height: 140px;
+}
+
+.border_10 {
+  width: 5px;
+  float: left;
+  background-color: #d9bad7;
+  height: 100px;
+}
+
+.milk_text {
+  width: 100%;
+  float: left;
+  color: #151515;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0px;
+}
+
+.price_text {
+  width: 100%;
+  float: left;
+  color: #151515;
+  font-size: 60px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box_main:hover {
+  background-color: #d9bad7;
+}
+
+.box_main:hover .border_10 {
+  background-color: #ffffff;
+}
+
+.box_main.active {
+  background-color: #d9bad7;
+}
+
+.box_main.active .border_10 {
+  background-color: #ffffff;
+}
+
+.box_main:hover .price_text,
+.box_main:hover .milk_text {
+  color: #ffffff;
+}
+
 
 .single-menu {
   background-color: #fff;

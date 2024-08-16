@@ -23,7 +23,7 @@
 
 <body>
    <!-- Hero -->
-   <header id="header" id="home">
+   <header id="header">
    <div class="header-top">
       <div class="container">
       <div class="row align-items-center justify-content-between d-flex">
@@ -44,7 +44,7 @@
    </header>
 
    <!-- Banner -->
-   <section class="banner-area">	
+   <section class="banner-area" id="home">	
       <div class="container">
          <div class="row fullscreen d-flex align-items-center justify-content-start">
             <div class="banner-content col-lg-9">
@@ -60,12 +60,94 @@
    </section>
 
    <!-- About -->
-   <section class="video-sec-area pb-100 pt-100" id="about">
+   <div class="about_section" id="about">
+      <div id="about_slider" class="carousel slide" data-ride="carousel">
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                              <div class="about_main">
+                                 <h1 class="about_taital">Our Story</h1>
+                                 <p class="about_text">
+                                    Hsin-Yi Chou grew up in Taipei, Taiwan. 
+                                    From a young age, Hsin-Yi was captivated by the art of tea since her parents owned a small tea shop where she spent countless hours watching her parents brew tea. 
+                                    The shop became a community hub, people gathered to relax and enjoy a moment of peace amidst the busy city life. 
+                                    As Hsin-Yi grew older, she studied culinary arts in Taipei, her dream was to open a relaxing space where people could experience the true essence of tea, like her parents did. 
+                                    After completing her studies, Hsin-Yi moved to Halifax, Nova Scotia, a city known for its diverse and welcoming community. 
+                                    She saw an opportunity to share her Taiwanese heritage by introducing a new concept in bubble tea culture.
+                                 </p>
+                                 <a href="#about" class="btn btn-outline-light text-uppercase about-btn">Learn More</a>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                              <div class="image_2">
+                                 <img class="our-story-img" src="{% static 'images/boba-bar-landing-page-imgs/about-img-1.png' %}" alt="Taipei">
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                              <div class="about_main">
+                                 <h1 class="about_taital">Our Values</h1>
+                                 <p class="about_text">
+                                    <span class="about_text_span"><strong>Quality:</strong></span> At The Boba Bar, we are committed to delivering the highest quality tea. From the sourcing to the use of fresh ingredients, we ensure that every drink meets the highest of standards.<br><br>
+                                    <span class="about_text_span"><strong>Innovation:</strong></span> Our menu features unique creations you have never tasted before and our goal is to give customers a one-of-a-kind experience.<br><br>
+                                    <span class="about_text_span"><strong>Community:</strong></span> Life can be hectic, and we want to create a safe space for everyone. The Boba Bar is more than just a place to get a drink; it's a welcoming gathering spot for friends, family, and neighbors.
+                                 </p>
+                                 <a href="#about" class="btn btn-outline-light text-uppercase about-btn">Learn More</a>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                              <div class="image_2">
+                                 <img class="our-values-img" src="{% static 'images/boba-bar-landing-page-imgs/about-img-2.png' %}" alt="Restaurant">
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+            <div class="carousel-item">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-md-6">
+                              <div class="about_main">
+                                 <h1 class="about_taital">Our Teas</h1>
+                                 <p class="about_text">
+                                    At The Boba Bar, we love to push the boundaries of tea by experimenting with new and exciting flavors. 
+                                    Our innovative approach means that we're constantly creating new combinations that incorporate a splash of your favorite alcoholic beverages. 
+                                    Whether it's a classic cocktail twist or a classic mocktail, our fusions offer a delightful experience that's both refreshing and comforting!
+                                 </p>
+                                 <a href="#about" class="btn btn-outline-light text-uppercase about-btn">Learn More</a>
+                              </div>
+                        </div>
+                        <div class="col-md-6">
+                              <div class="image_2">
+                                 <img class="our-teas-img" src="{% static 'images/boba-bar-landing-page-imgs/about-img-3.png' %}" alt="Matcha Bubble Tea">
+                              </div>
+                        </div>
+                     </div>
+                  </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#about_slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+         </a>
+         <a class="carousel-control-next" href="#about_slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+         </a>
+      </div>
+   </div>
+
+   <!-- <section class="about-section" id="about">
       <div class="container">
          <div class="row justify-content-start align-items-center">
-            <div class="col-lg-6 video-right justify-content-center align-items-center d-flex">
+            <div class="col-lg-5 right-div justify-content-center align-items-center d-flex">
             </div>						
-            <div class="col-lg-6 video-left">
+            <div class="col-lg-7 left-div">
                <h1>Our Story</h1>
                <p>
                   Hsin-Yi Chou grew up in Taipei, Taiwan.
@@ -78,149 +160,121 @@
             </div>
          </div>
       </div>	
-   </section>
+   </section> -->
 
-   <!-- Start menu Area -->
-   <section class="menu-area section-gap" id="coffee">
+   <!-- Menu -->
+   <div class="services_section layout_padding_menu" id="menu">
       <div class="container">
-         <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-60 col-lg-10">
-               <div class="title text-center">
-                  <h1 class="mb-10">What kind of Coffee we serve for you</h1>
-                  <p>Who are in extremely love with eco friendly system.</p>
+         <h1 class="services_taital">Our Menu</h1>
+         <p class="services_text">At The Boba Bar, we like to mix classic boba flavours with your favourite alcoholic drink. 
+            You can order any of our drinks below or ask our bartnerders for a unique mix!<br><br>
+            <strong>Note:</strong> We also do mocktails and regular bubble tea!
+         </p>
+         <div class="services_section_2 my-5">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-1" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-1.png' %}" alt="Milk Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10 active"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Baileys Milk Tea</h6>
+                        <h1 class="price_text">$9</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-2" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-2.png' %}" alt="Brown Sugar Milk Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Bourbon Brown<br>Sugar Milk Tea</h6>
+                        <h1 class="price_text">$10</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-3" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-3.png' %}" alt="Milk Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Gin Matcha Tea</h6>
+                        <h1 class="price_text">$14</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-4" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-4.png' %}" alt="Matcha Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Taro & Coconut<br>Rum Milk Tea</h6>
+                        <h1 class="price_text">$12</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-5" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-5.png' %}" alt="Taro Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Tequila Passion<br>Fruit Milk Tea</h6>
+                        <h1 class="price_text">$10</h1>
+                     </div>
+                  </div>
+                  <div class="box_main">
+                     <div class="left_main">
+                        <div class="cup_img_1">
+                           <img class="menu-item-6" src="{% static 'images/boba-bar-landing-page-imgs/menu-item-6.png' %}" alt="Passion Fruit Tea">
+                        </div>
+                     </div>
+                     <div class="middle_main">
+                        <div class="border_10"></div>
+                     </div>
+                     <div class="right_main">
+                        <h6 class="milk_text">Champagne<br>Strawberry Tea</h6>
+                        <h1 class="price_text">$14</h1>
+                     </div>
+                  </div>
                </div>
             </div>
-         </div>						
-         <div class="row">
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Cappuccino</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Americano</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Espresso</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>	
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Macchiato</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Mocha</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Coffee Latte</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Piccolo Latte</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Ristretto</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>
-            <div class="col-lg-4">
-               <div class="single-menu">
-                  <div class="title-div justify-content-between d-flex">
-                     <h4>Affogato</h4>
-                     <p class="price float-right">
-                        $49
-                     </p>
-                  </div>
-                  <p>
-                     Usage of the Internet is becoming more common due to rapid advance.
-                  </p>								
-               </div>
-            </div>				
          </div>
-      </div>	
-   </section>
-   <!-- End menu Area -->
+         <div class="justify-content-center menu-btn-div">
+            <a href="#menu" class="btn btn-outline-light text-uppercase menu-btn">See More</a>
+         </div>
+      </div>
+   </div>
 
-   <!-- Start gallery Area -->
+   <!-- Gallery -->
    <section class="gallery-area section-gap" id="gallery">
       <div class="container">
          <div class="row d-flex justify-content-center">
             <div class="menu-content pb-60 col-lg-10">
                   <div class="title text-center">
-                     <h1 class="mb-10">What kind of Coffee we serve for you</h1>
+                     <h1 class="mb-10"></h1>
                      <p>Who are in extremely love with eco friendly system.</p>
                   </div>
             </div>
@@ -228,10 +282,10 @@
          <div class="row">
             <div class="col-lg-4">
                   <a href="{% static 'images/img/g1.jpg' %}" class="img-pop-home">
-                     <img class="img-fluid" src="{% static 'images/img/g1.jpg' %}" alt="">
+                     <img class="img-fluid" src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-1.jpg' %}" alt="">
                   </a>	
                   <a href="{% static 'images/img/g2.jpg' %}" class="img-pop-home">
-                     <img class="img-fluid" src="{% static 'images/img/g2.jpg' %}" alt="">
+                     <img class="img-fluid" src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-2.jpg' %}" alt="">
                   </a>	
             </div>
             <div class="col-lg-8">
@@ -254,121 +308,12 @@
          </div>
       </div>	
    </section>
-   <!-- End gallery Area -->
 
-   <!-- Start review Area -->
-   <section class="review-area section-gap" id="review">
-      <div class="container">
-         <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-60 col-lg-10">
-                  <div class="title text-center">
-                     <h1 class="mb-10">What kind of Coffee we serve for you</h1>
-                     <p>Who are in extremely love with eco friendly system.</p>
-                  </div>
-            </div>
-         </div>						
-         <div class="row">
-            <div class="col-lg-6 col-md-6 single-review">
-                  <img src="{% static 'images/img/r1.png' %}" alt="">
-                  <div class="title d-flex flex-row">
-                     <h4>lorem ipsum</h4>
-                     <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>								
-                     </div>
-                  </div>
-                  <p>
-                     Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                  </p>
-            </div>	
-            <div class="col-lg-6 col-md-6 single-review">
-                  <img src="{% static 'images/img/r2.png' %}" alt="">
-                  <div class="title d-flex flex-row">
-                     <h4>lorem ipsum</h4>
-                     <div class="star">
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star checked"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>								
-                     </div>
-                  </div>
-                  <p>
-                     Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker. Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker.
-                  </p>
-            </div>	
-         </div>
-         <div class="row counter-row">
-            <div class="col-lg-3 col-md-6 single-counter">
-                  <h1 class="counter">2536</h1>
-                  <p>Happy Client</p>
-            </div>
-            <div class="col-lg-3 col-md-6 single-counter">
-                  <h1 class="counter">7562</h1>
-                  <p>Total Projects</p>
-            </div>
-            <div class="col-lg-3 col-md-6 single-counter">
-                  <h1 class="counter">2013</h1>
-                  <p>Cups Coffee</p>
-            </div>
-            <div class="col-lg-3 col-md-6 single-counter">
-                  <h1 class="counter">10536</h1>
-                  <p>Total Submitted</p>
-            </div>																		
-         </div>
-      </div>	
-   </section>
-   <!-- End review Area -->
+   <!-- Testimonials -->
 
-   <!-- Start blog Area -->
-   <section class="blog-area section-gap" id="blog">
-      <div class="container">
-         <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-60 col-lg-10">
-                  <div class="title text-center">
-                     <h1 class="mb-10">What kind of Coffee we serve for you</h1>
-                     <p>Who are in extremely love with eco friendly system.</p>
-                  </div>
-            </div>
-         </div>						
-         <div class="row">
-            <div class="col-lg-6 col-md-6 single-blog">
-                  <img class="img-fluid" src="{% static 'images/img/b1.jpg' %}" alt="">
-                  <ul class="post-tags">
-                     <li><a href="#">Travel</a></li>
-                     <li><a href="#">Life Style</a></li>
-                  </ul>
-                  <a href="#"><h4>Portable latest Fashion for young women</h4></a>
-                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                  <p class="post-date">
-                     31st January, 2018
-                  </p>
-            </div>
-            <div class="col-lg-6 col-md-6 single-blog">
-                  <img class="img-fluid" src="{% static 'images/img/b2.jpg' %}" alt="">
-                  <ul class="post-tags">
-                     <li><a href="#">Travel</a></li>
-                     <li><a href="#">Life Style</a></li>
-                  </ul>
-                  <a href="#"><h4>Portable latest Fashion for young women</h4></a>
-                  <p>
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                  <p class="post-date">
-                     31st January, 2018
-                  </p>
-            </div>						
-         </div>
-      </div>	
-   </section>
-   <!-- End blog Area -->
 
-   <!-- start footer Area -->		
+
+   <!-- Footer -->		
    <footer class="footer-area section-gap">
       <div class="container">
          <div class="row">
