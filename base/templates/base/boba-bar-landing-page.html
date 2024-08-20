@@ -5,9 +5,9 @@
 
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <!-- <link rel="shortcut icon" href="img/fav.png"> -->
+   <link rel="icon" type="image/png" href="{% static 'images/boba-bar-landing-page-imgs/favicon.ico' %}">
    <meta charset="UTF-8">
-   <title>The Boba Bar HFX Landing Page</title>
+   <title>The Boba Bar HFX Landing Page - Case Study</title>
 
    <link href="{% static 'css/bb-css/linearicons.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
@@ -15,7 +15,6 @@
    <link href="{% static 'css/bb-css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/nice-select.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/animate.min.css' %}" rel="stylesheet" type="text/css">		
-   <link href="{% static 'css/bb-css/owl.carousel.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/owl.carousel.css' %}" rel="stylesheet" type="text/css">	
    <link href="{% static 'css/boba-bar-landing-page.css' %}" rel="stylesheet" type="text/css">
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
@@ -32,12 +31,13 @@
          </div>
          <nav id="nav-menu-container">
             <ul class="nav-menu">
-               <li class="menu-active"><a href="#home">Home</a></li>
-               <li><a href="#about">About</a></li>
-               <li><a href="#menu">Menu</a></li>
-               <li><a href="#testimonials">Testimonials</a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
+               <li><a class="smoothscroll" href="#home">Home</a></li>
+               <li><a class="smoothscroll" href="#about">About</a></li>
+               <li><a class="smoothscroll" href="#menu">Menu</a></li>
+               <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
+               <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
+               <li><a class="smoothscroll" href="#contact">Contact</a></li>
+           </ul>
          </nav>	    		
       </div>
       </div>
@@ -60,7 +60,7 @@
    </section>
 
    <!-- About -->
-   <div class="about_section" id="about">
+   <section class="about_section" id="about">
       <div id="about_slider" class="carousel slide" data-ride="carousel">
          <div class="carousel-inner">
             <div class="carousel-item active">
@@ -68,7 +68,7 @@
                      <div class="row">
                         <div class="col-md-6">
                               <div class="about_main">
-                                 <h1 class="about_taital">Our Story</h1>
+                                 <h1 class="about_taital mb-4">Our Story</h1>
                                  <p class="about_text">
                                     Hsin-Yi Chou grew up in Taipei, Taiwan. 
                                     From a young age, Hsin-Yi was captivated by the art of tea since her parents owned a small tea shop where she spent countless hours watching her parents brew tea. 
@@ -93,7 +93,7 @@
                      <div class="row">
                         <div class="col-md-6">
                               <div class="about_main">
-                                 <h1 class="about_taital">Our Values</h1>
+                                 <h1 class="about_taital mb-4">Our Values</h1>
                                  <p class="about_text">
                                     <span class="about_text_span"><strong>Quality:</strong></span> At The Boba Bar, we are committed to delivering the highest quality tea. From the sourcing to the use of fresh ingredients, we ensure that every drink meets the highest of standards.<br><br>
                                     <span class="about_text_span"><strong>Innovation:</strong></span> Our menu features unique creations you have never tasted before and our goal is to give customers a one-of-a-kind experience.<br><br>
@@ -115,11 +115,11 @@
                      <div class="row">
                         <div class="col-md-6">
                               <div class="about_main">
-                                 <h1 class="about_taital">Our Teas</h1>
+                                 <h1 class="about_taital mt-4 mb-4">Our Teas</h1>
                                  <p class="about_text">
-                                    At The Boba Bar, we love to push the boundaries of tea by experimenting with new and exciting flavors. 
-                                    Our innovative approach means that we're constantly creating new combinations that incorporate a splash of your favorite alcoholic beverages. 
-                                    Whether it's a classic cocktail twist or a classic mocktail, our fusions offer a delightful experience that's both refreshing and comforting!
+                                    At The Boba Bar, we love to push the boundaries of tea by experimenting with new and exciting flavors.
+                                    By incorporating a splash of your favorite alcoholic beverages, we create unique fusions that marry the rich, comforting essence of tea with the vibrant, invigorating flavors of classic cocktails and mocktails.
+                                    Whether you're in the mood for a twist on a timeless drink or eager to try something entirely new, our carefully crafted concoctions promise a delightful journey that'ss as refreshing as it is comforting.
                                  </p>
                                  <a href="#about" class="btn btn-outline-light text-uppercase about-btn">Learn More</a>
                               </div>
@@ -134,36 +134,33 @@
             </div>
          </div>
          <a class="carousel-control-prev" href="#about_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
+            <img class="boba-previous" src="{% static 'images/boba-bar-landing-page-imgs/boba-prev.png' %}"alt="Previous">
          </a>
          <a class="carousel-control-next" href="#about_slider" role="button" data-slide="next">
-            <i class="fa fa-angle-right"></i>
+            <img class="boba-next" src="{% static 'images/boba-bar-landing-page-imgs/boba-next.png' %}" alt="Next">
          </a>
       </div>
-   </div>
+   </section>
 
-   <!-- <section class="about-section" id="about">
+   <!-- Divider -->
+   <section class="section" id="call-to-action">
       <div class="container">
-         <div class="row justify-content-start align-items-center">
-            <div class="col-lg-5 right-div justify-content-center align-items-center d-flex">
-            </div>						
-            <div class="col-lg-7 left-div">
-               <h1>Our Story</h1>
-               <p>
-                  Hsin-Yi Chou grew up in Taipei, Taiwan.
-                  From a young age, Hsin-Yi was captivated by the art of tea since her parents owned a small tea shop where she spent countless hours watching her parents brew tea.
-                  The shop became a community hub, people gathered to relax and enjoy a moment of peace amidst the busy city life.
-                  As Hsin-Yi grew older, she studied culinary arts in Taipei, her dream was to open a relaxing space where people could experience the true essence of tea, like her parents did.
-                  After completing her studies, Hsin-Yi moved to Halifax, Nova Scotia, a city known for its diverse and welcoming community.
-                  She saw an opportunity to share her Taiwanese heritage by introducing a new concept in bubble tea culture.
-               </p>
-            </div>
-         </div>
-      </div>	
-   </section> -->
+          <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                  <div class="cta-content">
+                      <h2>Don’t <em>think</em>, begin <em>today</em>!</h2>
+                      <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
+                      <div class="main-button scroll-to-section">
+                          <a href="#our-classes">Become a member</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
 
    <!-- Menu -->
-   <div class="services_section layout_padding_menu" id="menu">
+   <section class="services_section layout_padding_menu" id="menu">
       <div class="container">
          <h1 class="services_taital">Our Menu</h1>
          <p class="services_text">At The Boba Bar, we like to mix classic boba flavours with your favourite alcoholic drink. 
@@ -262,56 +259,145 @@
                </div>
             </div>
          </div>
-         <div class="justify-content-center menu-btn-div">
-            <a href="#menu" class="btn btn-outline-light text-uppercase menu-btn">See More</a>
+         <div class="d-flex align-items-center justify-content-center menu-btn-div">
+            <a href="#home" class="btn btn-outline-light text-uppercase menu-btn">See More</a>
          </div>
       </div>
-   </div>
+   </section>
 
    <!-- Gallery -->
-   <section class="gallery-area section-gap" id="gallery">
-      <div class="container">
-         <div class="row d-flex justify-content-center">
-            <div class="menu-content pb-60 col-lg-10">
-                  <div class="title text-center">
-                     <h1 class="mb-10"></h1>
-                     <p>Who are in extremely love with eco friendly system.</p>
+   <section class="gallery" id="gallery">
+      <div class="container-fluid">
+         <h2 class="gallery-title">Gallery</h2>
+         <div class="row no-gutters">
+            <div class="col-md-4">
+               <div class="gallery-item">
+                  <img src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-1.png' %}" alt="Gallery Image 1" class="img-fluid">
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gallery-item">
+                  <img src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-2.png' %}" alt="Gallery Image 2" class="img-fluid">
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gallery-item">
+                  <img src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-3.png' %}" alt="Gallery Image 3" class="img-fluid">
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gallery-item">
+                  <img src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-4.png' %}" alt="Gallery Image 4" class="img-fluid">
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gallery-item">
+                  <img src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-5.png' %}" alt="Gallery Image 5" class="img-fluid">
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="gallery-item">
+                  <img src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-6.png' %}" alt="Gallery Image 6" class="img-fluid">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Contact Section -->
+   <section class="section" id="contact">
+      <div class="container-fluid">
+         <h2 class="contact-title">Contact Us</h2>
+          <div class="row">
+            <div class="col-md-6 pl-0 pr-0">
+               <div class="map_main">
+                  <div class="map-responsive">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.964016301388!2d-63.56748908446313!3d44.645338679099995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a22670c85f8ed%3A0x6e10f693d6e7e7ea!2sHalifax%20Waterfront!5e0!3m2!1sen!2sca!4v1692180730007!5m2!1sen!2sca"
+                        height="600"
+                        frameborder="0"
+                        style="border:0; width: 100%;"
+                        allowfullscreen="">
+                     </iframe>
+
                   </div>
+               </div>
             </div>
-         </div>						
-         <div class="row">
-            <div class="col-lg-4">
-                  <a href="{% static 'images/img/g1.jpg' %}" class="img-pop-home">
-                     <img class="img-fluid" src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-1.jpg' %}" alt="">
-                  </a>	
-                  <a href="{% static 'images/img/g2.jpg' %}" class="img-pop-home">
-                     <img class="img-fluid" src="{% static 'images/boba-bar-landing-page-imgs/gallery-img-2.jpg' %}" alt="">
-                  </a>	
-            </div>
-            <div class="col-lg-8">
-                  <a href="{% static 'images/img/g3.jpg' %}" class="img-pop-home">
-                     <img class="img-fluid" src="{% static 'images/img/g3.jpg' %}" alt="">
-                  </a>	
-                  <div class="row">
-                     <div class="col-lg-6">
-                        <a href="{% static 'images/img/g4.jpg' %}" class="img-pop-home">
-                              <img class="img-fluid" src="{% static 'images/img/g4.jpg' %}" alt="">
-                        </a>	
-                     </div>
-                     <div class="col-lg-6">
-                        <a href="{% static 'images/img/g5.jpg' %}" class="img-pop-home">
-                              <img class="img-fluid" src="{% static 'images/img/g5.jpg' %}" alt="">
-                        </a>	
-                     </div>
+            <div class="col-lg-6 col-md-6 col-xs-12">
+                  <div class="contact-form">
+                     <form id="contact-us" action="" method="post">
+                        <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                           <fieldset>
+                              <input name="name" type="text" id="name" placeholder="Name *" required="">
+                           </fieldset>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                           <fieldset>
+                              <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email *" required="">
+                           </fieldset>
+                        </div>
+                        <div class="col-md-12 col-sm-12">
+                           <fieldset>
+                              <input name="subject" type="text" id="subject" placeholder="Subject">
+                           </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                           <fieldset>
+                              <textarea name="message" rows="6" id="message" placeholder="Message..." required=""></textarea>
+                           </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                           <fieldset>
+                              <a href="#contact" class="btn btn-outline-light text-uppercase contact-btn">See More</a>
+                           </fieldset>
+                        </div>
+                        </div>
+                     </form>
                   </div>
             </div>
          </div>
-      </div>	
+      </div>
    </section>
 
-   <!-- Testimonials -->
-
-
+   <!-- <section class="contact_section" id="contact">
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-md-6">
+               <div class="mail_main">
+                  <h1 class="contact_taital mt-5">Contact us</h1>
+                  <form action="/action_page.php">
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Name" name="Name">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Email" name="Email">
+                     </div>
+                     <div class="form-group">
+                        <input type="text" class="email-bt" placeholder="Subject" name="Email">
+                     </div>
+                     <div class="form-group">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
+                     </div>
+                  </form>
+                  <div class="send_btn">
+                     <a href="#contact" class="btn btn-outline-light text-uppercase contact-btn">Send</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6">
+               <div class="map_main">
+                  <div class="map-responsive">
+                     <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.9466957021936!2d-63.58268798446276!3d44.64886247909964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a222bdd9b1fc7%3A0xa16c4b6bb5e9eefe!2sHalifax%20Citadel%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1592225691364!5m2!1sen!2sca"
+                        width="600" height="550" frameborder="0" style="border:0; width: 100%;"
+                        allowfullscreen=""></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>  -->
 
    <!-- Footer -->		
    <footer class="footer-area section-gap">
@@ -320,49 +406,42 @@
             <div class="col-lg-5 col-md-6 col-sm-6">
                   <div class="single-footer-widget">
                      <h6>About Us</h6>
-                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.
-                     </p>
-                     <p class="footer-text">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                     <p>The Boba Bar is a fake company created by Anaik Chacon. Anaik's projects are intended as case studies and conceptual exercises only. If there are any concerns about the contents shown in this website, please reach out.</p>
+                     <p class="footer-text">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved<br>
+                        This website was put together with the help of <a href="https://colorlib.com" target="_blank"><strong>Colorlib</strong></a>
                      </p>								
                   </div>
             </div>
             <div class="col-lg-5  col-md-6 col-sm-6">
                   <div class="single-footer-widget">
                      <h6>Newsletter</h6>
-                     <p>Stay update with our latest</p>
+                     <p>Subscribe to our newsletter and stay updated:</p>
                      <div class="" id="mc_embed_signup">
-                        <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+                        <form class="form-inline">
                               <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
                               <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
                               <div style="position: absolute; left: -5000px;">
                                  <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                               </div>
-
-                              <div class="info pt-20"></div>
                         </form>
                      </div>
                   </div>
             </div>						
             <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                  <div class="single-footer-widget">
-                     <h6>Follow Us</h6>
-                     <p>Let us be social</p>
-                     <div class="footer-social d-flex align-items-center">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-dribbble"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                     </div>
+               <div class="single-footer-widget">
+                  <h6>Follow Us</h6>
+                  <p>Find us in the following platforms:</p>
+                  <div class="footer-social d-flex align-items-center">
+                     <a href="#"><i class="fa fa-facebook"></i></a>
+                     <a href="#"><i class="fa fa-twitter"></i></a>
+                     <a href="#"><i class="fa fa-dribbble"></i></a>
+                     <a href="#"><i class="fa fa-behance"></i></a>
                   </div>
+               </div>
             </div>							
          </div>
       </div>
-   </footer>	
-   <!-- End footer Area -->
+   </footer>
    
    <script src="{% static 'js/bb-js/vendor/jquery-2.2.4.min.js' %}"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -387,3 +466,4 @@
 <!-- Img Sources -->
 <!-- https://www.freepik.com/free-photo/arrangement-with-delicious-traditional-thai-tea_15035747.htm -->
 <!-- https://www.pexels.com/photo/taipei-seen-from-xiangshan-15586114/ -->
+<!-- https://www.freepik.com/free-photo/arrangement-with-delicious-traditional-thai-tea_15035763.htm#fromView=search&page=6&position=5&uuid=90e3e396-0f02-4b7a-83a0-44f7d17c3890 -->
