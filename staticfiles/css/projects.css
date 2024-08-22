@@ -19,6 +19,7 @@ body {
 }
 
 .nav-link {
+   padding-top: 1.3em;
    color: #ffe7e7 !important;
 }
 
@@ -146,7 +147,7 @@ body {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   background-image: url("../images/heros/crochet-hero-1.png");
+   background-image: url("../images/heros/crochet-hero.png");
 }
 
 .slider-item:before,

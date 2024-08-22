@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
     <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
     <link href="{% static '/css/projects.css'  %}" rel="stylesheet" type="text/css">
+
+    <style>
+      .nav-link {
+        color: #8babc4 !important;
+      }
+      .nav-link:hover {
+        color: #5080bf !important;
+      }
+    </style>
 </head>
 
 <body>
@@ -19,7 +28,7 @@
       <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
         <div class="container-fluid">
             <div class="logo-div">
-              <a class="navbar-brand navbar-text ml-1" href="{% url 'home' %}">Anaik Chacon</a>
+              <a class="navbar-brand navbar-text ml-1" style="color: #8babc4 !important;" href="{% url 'home' %}">Anaik Chacon</a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -45,46 +54,45 @@
         </div>
       </div>
   
-      <!-- Project Details -->
-      <div class="section" id="projects-details-section">
-        <div class="w-80 p-5">
-          <div class="row mb-5">
-            <div class="col-lg-8">
-              <a class="mb-5 d-block" data-fancybox="gal"><img id="main-page" class="img-fluid" src="{% static 'images/certificate.png' %}" alt="Certificate"></a>
+    <!-- Project Details -->
+    <div class="section" id="projects-details-section">
+      <div class="w-80 p-5">
+        <div class="row mb-5">
+          <div class="col-lg-8">
+            <a class="mb-5 d-block" data-fancybox="gal"><img id="main-page" class="img-fluid" src="{% static 'images/certificate.png' %}" alt="Certificate"></a>
+          </div>
+          <div class="col-lg-4 ml-auto">
+            <div class="block-fixed">
+              <br>
+              <h3 class="mb-4"><strong class="d-block text-black">Learning Outcomes</strong></h3>
+              <ul class="mb-5">
+                <li class="mb-1">Interpret basic body language cues</li>
+                <li class="mb-1">Interpret para-verbal communication</li>
+                <li class="mb-1">Demonstrate active listening</li>
+                <li class="mb-1">Identify and apply the four main communication styles</li>
+                <li class="mb-1">Describe the impact of intention in the communication process</li>
+                <li class="mb-1">Explain triangulation in the workplace</li>
+                <li class="mb-1">Demonstrate how to have a difficult conversation</li>
+                <li class="mb-1">Describe the characteristics of the different generations</li>
+                <li class="mb-1">Apply best practices in workplace communication</li>
+              </ul>
+              <h3 class="mb-4"><strong class="d-block text-black">Standard Topics</strong></h3>
+              <ul class="mb-5">
+                <li class="mb-1">Verbal vs non-verbal communication</li>
+                <li class="mb-1">Active listening</li>
+                <li class="mb-1">Communication styles</li>
+                <li class="mb-1">Power of intention</li>
+                <li class="mb-1">Triangulation</li>
+                <li class="mb-1">Best practices in workplace communication</li>
+                <li class="mb-1">Navigating a multi-generational workplace</li>
+                <li class="mb-1">Difficult conversations</li>
+              </ul>
+              <a href="https://novascotia.ca/lae/workplace-education/" target="_blank"><button class="btn btn-outline-light text-uppercase wei-visit-website-btn">WEI Website</button></a>
             </div>
-            <div class="col-lg-3 ml-auto">
-                <div class="block-fixed">
-                    <br>
-                    <h3 class="mb-4"><strong class="d-block text-black">Learning Outcomes</strong></h3>
-                    <ul class="list-unstyled mb-5">
-                        <li class="mb-1">Interpret basic body language cues</li>
-                        <li class="mb-1">Interpret para-verbal communication</li>
-                        <li class="mb-1">Demonstrate active listening</li>
-                        <li class="mb-1">Identify and apply the four main communication styles</li>
-                        <li class="mb-1">Describe the impact of intention in the communication process</li>
-                        <li class="mb-1">Explain triangulation in the workplace</li>
-                        <li class="mb-1">Demonstrate how to have a difficult conversation</li>
-                        <li class="mb-1">Describe the characteristics of the different generations</li>
-                        <li class="mb-1">Apply best practices in workplace communication</li>
-                    </ul>
-                    <h3 class="mb-4"><strong class="d-block text-black">Standard Topics</strong></h3>
-                    <ul class="list-unstyled mb-5">
-                        <li class="mb-1">Verbal vs non-verbal communication</li>
-                        <li class="mb-1">Active listening</li>
-                        <li class="mb-1">Communication styles</li>
-                        <li class="mb-1">Power of intention</li>
-                        <li class="mb-1">Triangulation</li>
-                        <li class="mb-1">Best practices in workplace communication</li>
-                        <li class="mb-1">Navigating a multi-generational workplace</li>
-                        <li class="mb-1">Difficult conversations</li>
-                    </ul>
-                    <a href="https://novascotia.ca/lae/workplace-education/" target="_blank"><button class="btn btn-outline-light text-uppercase wei-visit-website-btn">WEI Website</button></a>
-                </div>
-              </div>
           </div>
         </div>
       </div>
-
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -108,7 +116,6 @@
         </div>
     </footer>
 
-    <script>
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
