@@ -9,8 +9,8 @@
    <meta charset="UTF-8">
    <title>The Boba Bar HFX Landing Page - Case Study</title>
 
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/linearicons.css' %}" rel="stylesheet" type="text/css">
-   <link href="{% static 'css/bb-css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/bootstrap.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
    <link href="{% static 'css/bb-css/nice-select.css' %}" rel="stylesheet" type="text/css">
@@ -35,7 +35,6 @@
                <li><a class="smoothscroll" href="#about">About</a></li>
                <li><a class="smoothscroll" href="#menu">Menu</a></li>
                <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
-               <!-- <li><a class="smoothscroll" href="#testimonials">Testimonials</a></li> -->
                <li><a class="smoothscroll" href="#contact">Contact</a></li>
            </ul>
          </nav>	    		
@@ -148,11 +147,11 @@
           <div class="row">
               <div class="col-lg-10 offset-lg-1">
                   <div class="cta-content">
-                      <h2>Don’t <em>think</em>, begin <em>today</em>!</h2>
-                      <p>Ut consectetur, metus sit amet aliquet placerat, enim est ultricies ligula, sit amet dapibus odio augue eget libero. Morbi tempus mauris a nisi luctus imperdiet.</p>
-                      <div class="main-button scroll-to-section">
-                          <a href="#our-classes">Become a member</a>
-                      </div>
+                     <h2>Where <em>Flavor </em>Meets <em>Relaxation!</em></h2>
+                     <p>Stay in the loop with our free newsletter, where we share all our upcoming events. Subscribe today, become a member, and be the first to know about our relaxing gatherings!</p>
+                     <div class="main-button scroll-to-section">
+                        <a href="#" class="btn btn-outline-light text-uppercase subscribe-btn">Subscribe</a>
+                     </div>
                   </div>
               </div>
           </div>
@@ -268,7 +267,7 @@
    <!-- Gallery -->
    <section class="gallery" id="gallery">
       <div class="container-fluid">
-         <h2 class="gallery-title">Gallery</h2>
+         <h1 class="gallery-title">The Boba Bar in Pictures</h1>
          <div class="row no-gutters">
             <div class="col-md-4">
                <div class="gallery-item">
@@ -307,7 +306,7 @@
    <!-- Contact Section -->
    <section class="section" id="contact">
       <div class="container-fluid">
-         <h2 class="contact-title">Contact Us</h2>
+         <h1 class="contact-title">Contact Us</h1>
           <div class="row">
             <div class="col-md-6 pl-0 pr-0">
                <div class="map_main">
@@ -360,45 +359,6 @@
       </div>
    </section>
 
-   <!-- <section class="contact_section" id="contact">
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-md-6">
-               <div class="mail_main">
-                  <h1 class="contact_taital mt-5">Contact us</h1>
-                  <form action="/action_page.php">
-                     <div class="form-group">
-                        <input type="text" class="email-bt" placeholder="Name" name="Name">
-                     </div>
-                     <div class="form-group">
-                        <input type="text" class="email-bt" placeholder="Email" name="Email">
-                     </div>
-                     <div class="form-group">
-                        <input type="text" class="email-bt" placeholder="Subject" name="Email">
-                     </div>
-                     <div class="form-group">
-                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
-                     </div>
-                  </form>
-                  <div class="send_btn">
-                     <a href="#contact" class="btn btn-outline-light text-uppercase contact-btn">Send</a>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-6">
-               <div class="map_main">
-                  <div class="map-responsive">
-                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.9466957021936!2d-63.58268798446276!3d44.64886247909964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4b5a222bdd9b1fc7%3A0xa16c4b6bb5e9eefe!2sHalifax%20Citadel%20National%20Historic%20Site!5e0!3m2!1sen!2sca!4v1592225691364!5m2!1sen!2sca"
-                        width="600" height="550" frameborder="0" style="border:0; width: 100%;"
-                        allowfullscreen=""></iframe>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>  -->
-
    <!-- Footer -->		
    <footer class="footer-area section-gap">
       <div class="container">
@@ -419,7 +379,9 @@
                      <div class="" id="mc_embed_signup">
                         <form class="form-inline">
                               <input class="form-control" name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
-                              <button class="click-btn btn btn-default"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></button>
+                              <button class="click-btn btn btn-default">
+                                 <i class="fas fa-arrow-right"></i>
+                              </button>
                               <div style="position: absolute; left: -5000px;">
                                  <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
                               </div>
@@ -432,10 +394,9 @@
                   <h6>Follow Us</h6>
                   <p>Find us in the following platforms:</p>
                   <div class="footer-social d-flex align-items-center">
-                     <a href="#"><i class="fa fa-facebook"></i></a>
-                     <a href="#"><i class="fa fa-twitter"></i></a>
-                     <a href="#"><i class="fa fa-dribbble"></i></a>
-                     <a href="#"><i class="fa fa-behance"></i></a>
+                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                   </div>
                </div>
             </div>							
@@ -457,8 +418,7 @@
    <script src="{% static 'js/bb-js/jquery.nice-select.min.js' %}"></script>			
    <script src="{% static 'js/bb-js/parallax.min.js' %}"></script>	
    <script src="{% static 'js/bb-js/waypoints.min.js' %}"></script>
-   <script src="{% static 'js/bb-js/jquery.counterup.min.js' %}"></script>					
-   <script src="{% static 'js/bb-js/mail-script.js' %}"></script>	
+   <script src="{% static 'js/bb-js/jquery.counterup.min.js' %}"></script>
    <script src="{% static 'js/bb-js/main.js' %}"></script>
 </body>
 </html>
