@@ -19,12 +19,17 @@ body {
 }
 
 .nav-link {
-   padding-top: 1.3em;
    color: #ffe7e7 !important;
 }
 
 .nav-link:hover {
    color: #CAA6a6 !important;
+}
+
+@media screen and (max-width: 991px) {
+   .nav-link {
+       padding-top: 1.3em;
+   }
 }
 
 .navbar-brand,
@@ -39,7 +44,7 @@ body {
    color: var(--white-color);
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 991.98px) {
     .navbar-text {
       margin-left: 1em;
     }

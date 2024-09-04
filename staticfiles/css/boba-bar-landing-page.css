@@ -1023,7 +1023,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #call-to-action {
   padding: 110px 0px;
-  background-image: url(../images/boba-bar-landing-page-imgs/divider-1.png);
+  background-image: url(../images/boba-bar-landing-page-imgs/divider.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1193,17 +1193,31 @@ body.mobile-nav-active #mobile-nav-toggle {
 .gallery {
   position: relative;
   width: 100%;
-  padding-bottom: 10em;
-  /* background-color: #f8f9fa; */
+  padding-bottom: 8em;
 }
 
 .gallery-title {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
   padding-top: 2em;
-  padding-bottom: 0.5em;
   font-size: 40px;
   color: #000;
+}
+
+.gallery-subtitle {
+  text-align: center;
+  margin-top: 1.2em;
+  margin-bottom: 4em;
+}
+
+.gallery-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-image-container img {
+  width: 7em;
+  height: 5em;
 }
 
 .gallery-item {
@@ -1234,12 +1248,23 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .contact-title {
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
   padding-top: 0.5em;
-  padding-bottom: 1em;
   font-size: 40px;
   color: #000;
 }
+
+
+.contact-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-image-container img {
+  width: 7em;
+  height: 5em;
+}
+
 
 #contact {
   margin-bottom: 10em;
@@ -1251,7 +1276,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-form {
   padding: 80px;
-  background-color: #d9bad7;
+  /* background-color: #6F4E37; */
+  background-image: url(../images/boba-bar-landing-page-imgs/contact-background-img.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #contact .contact-form #contact-us {
