@@ -53,6 +53,9 @@ def potterycompanyrebrand(request):
 def crochet(request):
     return render(request, 'base/crochet-project.html')
 
+def imagesources(request):
+    return render(request, 'base/image-sources.html')
+
 def bobabarlandingpage(request):
     return render(request, 'base/boba-bar-landing-page.html')
 

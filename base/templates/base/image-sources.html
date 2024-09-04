@@ -1,0 +1,217 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anaik Chacon - Image Sources</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="{% static 'images/favicon.png' %}">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <header class="bg-dark fixed-top">
+        <nav class="container-xxl navbar navbar-expand-lg py-3 bg-dark navbar-dark">
+            <div class="container-fluid">
+                <div class="logo-div">
+                    <a class="navbar-brand navbar-text ml-1" href="{% url 'home' %}">Anaik Chacon</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item mx-2"><a class="nav-link" href="{% url 'home' %}">HOME</a></li>
+                        <li class="nav-item mx-2"><a class="nav-link" href="{% url 'projects' %}">PROJECTS</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Image Sources -->
+    <main class="container mt-5 pt-5">
+        <h1 class="text-center mt-5">Image Sources</h1>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-10">
+                <h4 class="mt-5 mb-3">Homepage</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAECtvI3A_E-laptop-and-computer-placed-on-white-work-desk-with-notepad-and-smartphone/" target="_blank">Laptop and computer placed on white desk with notepad and smartphone</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/white-usb-flash-drive-on-white-printer-paper-voDk3pYEYkI" target="_blank">White USB flash drive on white printer paper</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Projects Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAEbJZVL_2U-overhead-shot-of-graphic-designer-office-desk-with-blank-screen/" target="_blank">Overhead shot of graphic designer office desk with blank screen</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/white-knit-textile-and-wooden-sticks-8971902/" target="_blank">White knit textile and wooden sticks</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/ferry-on-water-9775923/" target="_blank">Ferry on water</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Projects / Brand Guide Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/turned-on-silver-imac-with-might-mouse-and-keyboard-930530/" target="_blank">Turned on silver Imac with might mouse and keyboard</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Projects / The Boba Bar Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAE18UDc-jY-glasses-of-boba-tea-with-pearls-closeup/" target="_blank">Glasses of boba tea with pearls closeup</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MADQ5usZWJg-tables-and-chairs-at-a-cafe/" target="_blank">Tables and chairs at a cafe</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAE18WTb5Bo-glass-of-boba-tea-with-ingredients/" target="_blank">Glass of boba tea with ingredients</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAE18Uxd8k4-hand-pouring-milk-in-glass-of-boba-tea/" target="_blank">Hand pouring milk in glass of boba tea</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAFlO6HOGJc-a-man-holding-boba-tea-/" target="_blank">A man holding boba tea</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAEMtpgfVgI-splash-in-glass-of-milk-tea-on-table/" target="_blank">Splash in glass of milk tea on table</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MADGxwzzrAU-rectangular-brown-and-black-chalkboard-hanging-on-brown-wooden-frame/" target="_blank">Rectangular brown and black chalkboard hanging on brown wooden frame</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAEMtikxKvA-spoon-and-glass-of-milk-tea-with-pearls/" target="_blank">Spoon and glass of milk tea with pearls</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAEMtqj03j8-glasses-of-matcha-milk-tea-with-tapioca-on-wooden-table/" target="_blank">Glasses of matcha milk tea with tapioca on wooden table</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MADyQ0XJ-ss-people-in-cafe/" target="_blank">People in cafe</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Projects / Campsite Companions Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/white-tent-on-lake-near-green-trees-and-mountain-under-blue-sky-during-daytime-F4fH5dAfZnE" target="_blank">White tent on lake near green trees and mountain under blue sky during daytime</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/woman-and-a-dog-inside-outdoor-tent-near-body-of-water-eDgUyGu93Yw" target="_blank">Patrick Hendry - Annika's Yuki (woman and dog in tent)</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://pixabay.com/photos/dog-mountains-hike-norway-1557957/" target="_blank">Woman and dog on a mountain hike</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/six-camping-tents-in-forest-699558/" target="_blank">Six camping tents in forest</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/person-with-dog-sitting-on-grand-canyon-cliff-jd0hS7Vhn_A" target="_blank">Woman and dog seating at the edge of a cliff overseeing a canyon</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/man-in-black-jacket-and-brown-dog-walking-on-forest-during-daytime-t_c6AaJNk4g" target="_blank">Man in black jacket and brown dog walking on forest during daytime</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/man-in-black-jacket-standing-on-brown-sand-near-body-of-water-during-daytime-bZ5KRs8m-zs" target="_blank">A man, his dog, and two Tower Paddle Boards overlooking a lake</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/short-coated-brown-dog-on-gray-cliff-gA3Qd2tquMc" target="_blank">Dog at the edge of a cliff in the Sunol Regional Wilderness in California</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/man-carrying-red-and-black-backpack-with-yellow-labrador-retriever-puppy-1448054/" target="_blank">Man carrying red and black backpack with yellow labrador retriever puppy</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/man-in-black-t-shirt-and-brown-pants-carrying-hiking-backpack-walking-on-brown-rock-during-9NJWU7WB2HI" target="_blank">Man in black t-shirt and brown pants carrying hiking backpack walking on brown rock</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAFBHGjvkYU-tent-chairs-and-burning-campfire-outdoors/" target="_blank">Tent, chairs, and burning campfire outdoors</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/black-hiking-backpack-near-white-fujifilm-instax-mini-camera-near-black-leather-boots-red-half-zip-jacket-gray-pocket-watch-on-white-map-z9F_yK4Nmf8" target="_blank">Black hiking backpack near white fujifilm instax mini camera near black leather boots red half zip jacket gray pocket watch on white map</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/a-hiking-tool-set-on-display-11419328/" target="_blank">Hiking tool set on display</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://unsplash.com/photos/woman-with-dog-standing-on-edge-of-cliff-facing-forest-and-mountain-cL5THZBD5YQ" target="_blank">Woman with dog standing on edge of cliff facing forest and mountain</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.canva.com/photos/MAE_JVQTJrI-dog-inside-the-tent/" target="_blank">Dog inside the tent</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/thermoses-and-mugs-on-camping-table-on-coast-6271638/" target="_blank">Thermoses and mugs on camping table on coast</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Projects / Crochet Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/white-knit-textile-and-wooden-sticks-8971902/" target="_blank">White knit textile and wooden sticks</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Projects / Communications Certificate Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="https://www.pexels.com/photo/ferry-on-water-9775923/" target="_blank">Ferry on water</a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">The Boba Bar Landing Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="" target="_blank"></a>
+                    </li>
+                </ul>
+
+                <h4 class="mt-5 mb-3">Campsite Companions Landing Page</h4>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- <li class="list-group-item">
+        <a href="" target="_blank"></a>
+    </li> -->
+
+    <!-- Footer -->
+    <footer class="mt-5">
+        <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
+            <p class="copyright my-0">© 2024 Anaik Chacon</p>
+            <a id="footer-back-to-top-link" class="smoothscroll" href="#hero">
+                <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 back-to-top-btn">
+                    Top <i id="footer-back-to-top-icon" class="fa-solid fa-circle-up fa-lg"></i>
+                </button>
+            </a>
+            <div class="footer-icons-div">
+                <ul class="social-icons mb-0 d-flex">
+                    <a href="https://www.instagram.com/ach555/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none">
+                        <img class="footer-instagram-logo" src="{% static 'images/instagram-logo.png' %}" alt="Instagram logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
+                        <i id="footer-linkedin-logo" class="fa-brands fa-2x fa-linkedin"></i>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

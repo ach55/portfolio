@@ -1235,8 +1235,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact-title {
   text-align: center;
   margin: 20px 0;
-  padding-top: 2em;
-  padding-bottom: 0.5em;
+  padding-top: 0.5em;
+  padding-bottom: 1em;
   font-size: 40px;
   color: #000;
 }
@@ -1251,7 +1251,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-form {
   padding: 80px;
-  background-color: #f8f5ee;
+  background-color: #d9bad7;
 }
 
 #contact .contact-form #contact-us {

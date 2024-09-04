@@ -12,6 +12,7 @@ urlpatterns = [
     path('communications-certificate', views.communicationscertificate, name='communicationscertificate'),
     path('pottery-company-rebrand', views.potterycompanyrebrand, name='potterycompanyrebrand'),
     path('crochet', views.crochet, name='crochet'),
+    path('image-sources', views.imagesources, name='imagesources'),
     path('boba-bar-landing-page', views.bobabarlandingpage, name='bobabarlandingpage'),
     path('campsite-companions-landing-page', views.campsitecompanionslandingpage, name='campsitecompanionslandingpage'),
 ]

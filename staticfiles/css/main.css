@@ -641,7 +641,7 @@ body {
 @media (min-width: 1200px) {
     .basic-1 .text-container,
     .basic-2 .text-container {
-        margin-top: 4rem;
+        margin-top: 2.5rem;
         margin-left: 4rem;
     }
 }
@@ -651,6 +651,7 @@ body {
     background-color: white !important;
     border-color: #944E63 !important;
     letter-spacing: 0.05em !important;
+    margin-right: 3em !important;
 }
 
 .projects-learn-more-btn:hover {
@@ -659,6 +660,36 @@ body {
     border-color: #944E63 !important;
     letter-spacing: 0.05em !important;
 }
+
+.boba-bar-visit-website-btn {
+    background-color: #ffffff !important;
+    color: #698ebf !important;
+    border-color: #698ebf !important;
+    letter-spacing: 0.05em !important;
+    text-align: center !important;
+}
+ 
+ .boba-bar-visit-website-btn:hover {
+    background-color:#698ebf !important;
+    color: #ffffff !important;
+    border-color: #698ebf !important;
+    letter-spacing: 0.05em !important;
+}
+
+.campsite-companions-visit-website-btn {
+    background-color: #ffffff !important;
+    color: #1A4D2E !important;
+    border-color: #1A4D2E !important;
+    letter-spacing: 0.05em !important;
+    text-align: center !important;
+ }
+ 
+ .campsite-companions-visit-website-btn:hover {
+    background-color: #1A4D2E !important;
+    color: #ffffff !important;
+    border-color: #1A4D2E !important;
+    letter-spacing: 0.05em !important;
+ }
  
 .inner-page .slider-item{
     position:relative;
