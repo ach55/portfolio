@@ -54,12 +54,11 @@ Contact us -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="#">Home</a></li>
-                                                <li><a href="#">About</a></li>
-                                                <li><a href="#">Featured</a></li>
-                                                <li><a href="#">Shop</a></li>
-                                                <li><a href="#">Testimonials</a></li>
-                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#home">Home</a></li>
+                                                <li><a href="#about">About</a></li>
+                                                <li><a href="#featured">Featured</a></li>
+                                                <li><a href="#testimonials">Testimonials</a></li>
+                                                <li><a href="#contact">Contact</a></li>
                                                 <li><i class="fas fa-magnifying-glass"></i></li>
                                                 <li><i class="fas fa-user"></i></li>
                                                 <li><i class="fas fa-shopping-cart"></i></li>
@@ -81,7 +80,7 @@ Contact us -->
 
     <main>
         <!-- Hero Slider -->
-        <div class="slider-area position-relative">
+        <div class="slider-area position-relative" id="home">
             <div class="slider-active dot-style">
                 <div class="single-slider hero-overly slider-height slider-bg1 d-flex align-items-center">
                     <div class="container">
@@ -106,7 +105,7 @@ Contact us -->
                                     <h1 data-animation="fadeInUp" data-delay=".2s">Pack the Essentials</h1>
                                     <P data-animation="fadeInUp" data-delay=".4s">Equip Your Pup for Every Adventure!</P>
                                     <div class="hero__btn">
-                                        <a href="industries.html" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Browse</a>
+                                        <a href="#" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Browse</a>
                                     </div>
                                 </div>
                             </div>
@@ -121,7 +120,7 @@ Contact us -->
                                     <h1 data-animation="fadeInUp" data-delay=".2s">From Tents to Treats</h1>
                                     <P data-animation="fadeInUp" data-delay=".4s">We Got You Covered!</P>
                                     <div class="hero__btn">
-                                        <a href="industries.html" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Shop</a>
+                                        <a href="#" class="hero-btn mb-10"  data-animation="fadeInUp" data-delay=".8s">Shop</a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +131,7 @@ Contact us -->
         </div>
 
         <!-- About -->
-        <div class="visit-tailor-area fix">
+        <div class="visit-tailor-area fix" id="about">
             <!-- Right Div -->
             <div class="tailor-offers"></div>
             <!-- Left Div -->
@@ -150,7 +149,126 @@ Contact us -->
             </div>
         </div>
 
-        <!-- Add Slider Here -->
+        <!-- Featured Items Gallery -->
+        <section class="image-gallery" id="featured">
+            <div class="gallery-container">
+                <h2 class="text-center mb-5">Featured Items</h2>
+                <!-- Row 1 -->
+                <div class="row">
+                     <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/tent.png' %}" alt="Image 1" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CC Easy Set-Up Light Tent</h5>
+                                <p class="card-price">$134.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/thermus-2.png' %}" alt="Image 2" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">ThermoMate Red Thermus</h5>
+                                <p class="card-price">$45.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/thermus.png' %}" alt="Image 3" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Hot Lock Durable<br>769 ML Thermus</h5>
+                                <p class="card-price">$34.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/leash.png' %}" alt="Image 4" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CC 6ft Long Black Leash</h5>
+                                <p class="card-price">$19.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/dog-backpack.png' %}" alt="Image 5" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Orange Dog Light Backback</h5>
+                                <p class="card-price">$34.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/gloves.png' %}" alt="Image 6" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Waterproof Insulated Breathable Gloves</h5>
+                                <p class="card-price">$34.68</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/coffee-maker.png' %}" alt="Image 7" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Aluminum Espresso Coffee Maker</h5>
+                                <p class="card-price">$32.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/dog-bowl-1.png' %}" alt="Image 8" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Collapsible Dog Bowl Set</h5>
+                                <p class="card-price">$61.49</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/chair.png' %}" alt="Image 9" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Portable Folding Camping Chair</h5>
+                                <p class="card-price">$49.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/backpack.png' %}" alt="Image 10" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Lightweight Hiking Backpack</h5>
+                                <p class="card-price">$54.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/life-jacket.png' %}" alt="Image 11" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camp Pet Dog Life Jacket</h5>
+                                <p class="card-price">$59.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/sleeping-bag.png' %}" alt="Image 12" class="img-fluid">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CC Green/Orange Sleeping Bag</h5>
+                                <p class="card-price">$64.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
@@ -276,3 +394,6 @@ Contact us -->
 <!-- https://unsplash.com/photos/person-holding-ski-poles-in-the-middle-of-snow-during-winter-season-Dzd_O5cnr0Y -->
 <!-- https://unsplash.com/photos/man-in-black-jacket-standing-on-brown-sand-near-body-of-water-during-daytime-bZ5KRs8m-zs -->
 <!-- https://unsplash.com/photos/woman-in-blue-jacket-sitting-beside-brown-and-white-dog-jxd_BtnzQBQ -->
+<!-- https://www.canva.com/photos/MAEGvvq5eB8/ -->
+<!-- https://www.pexels.com/photo/two-people-hiking-532803/ -->
+<!-- https://www.canva.com/photos/MAEfe2cQTSs/ -->
