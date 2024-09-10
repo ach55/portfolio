@@ -158,12 +158,16 @@
 }
 .slicknav_menu .slicknav_icon-bar {
     background-color: #ffffff;
-    height: 3px;
-    margin: 5px 0;
+    height: 5px;
+    /* margin: 5px 0px; */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 0px;
+    margin-right: 0px;
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    width: 30px;
+    width: 45px;
     position: relative;
 }
 .slicknav_btn {

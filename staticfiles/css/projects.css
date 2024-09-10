@@ -198,11 +198,13 @@ body {
 .slider-item-communications-certificate .slider-text h1,
 .slider-item-crochet .slider-text h1 {
    font-family: 'Gotham', sans-serif !important; 
-   font-size:6rem;
-   color:#fff;
-   line-height:1.2;
-   font-weight:700!important;
-   margin-bottom:30px
+   font-size: 6rem;
+   color: #fff;
+   line-height: 1.2;
+   letter-spacing: 0.3rem;
+   font-weight: 500 !important;
+   text-transform: uppercase;
+   margin-bottom: 30px
 }
 
 .slider-item .slider-text h1 span,

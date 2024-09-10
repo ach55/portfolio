@@ -696,13 +696,13 @@ body {
     letter-spacing: 0.05em !important;
  }
  
-.inner-page .slider-item{
+.inner-page .slider-item {
     position:relative;
     height:calc(70vh);
     min-height:550px
 }
  
-.inner-page .slider-item .slider-text{
+.inner-page .slider-item .slider-text {
     color:#ffffff;
     height:calc(50vh - 117px);
     min-height:550px
@@ -730,10 +730,12 @@ body {
 
 .slider-item .slider-text h1 {
     font-family: 'Gotham', sans-serif !important; 
-    font-size: 6rem;
-    color: #ffffff;
+    font-size: 4.5em;
+    color: #fff;
     line-height: 1.2;
-    font-weight: 700!important;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    font-weight: 300 !important;
     margin-bottom: 30px;
 }
 
@@ -783,4 +785,23 @@ body {
     font-size: 1.5rem!important;
     text-decoration: underline;
     color: #fff!important
+}
+
+/* Divider / Call to Action */
+
+#img-sources-header {
+	padding: 230px 0px;
+	background-image: url(../images/img-sources-divider.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+  
+.img-sources-header-content h1 {
+    font-family: 'Gotham', sans-serif !important;
+    letter-spacing: .3rem;
+    font-size: 4em;
+    text-transform: uppercase;
+	color: #fff;
 }

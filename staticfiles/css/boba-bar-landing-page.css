@@ -1254,7 +1254,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #000;
 }
 
-
 .contact-image-container {
   display: flex;
   justify-content: center;
@@ -1264,7 +1263,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 7em;
   height: 5em;
 }
-
 
 #contact {
   margin-bottom: 10em;
@@ -1276,7 +1274,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .contact-form {
   padding: 80px;
-  /* background-color: #6F4E37; */
   background-image: url(../images/boba-bar-landing-page-imgs/contact-background-img.png);
   background-position: center center;
   background-repeat: no-repeat;
@@ -1399,7 +1396,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-footer-widget ::-moz-selection {
-  /* Code for Firefox */
   background-color: #191919 !important;
   color: #777777;
 }
@@ -1410,33 +1406,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-footer-widget ::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
   color: #777777;
   font-weight: 300;
 }
 
 .single-footer-widget :-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
   color: #777777;
   opacity: 1;
   font-weight: 300;
 }
 
 .single-footer-widget ::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
   color: #777777;
   opacity: 1;
   font-weight: 300;
 }
 
 .single-footer-widget :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: #777777;
   font-weight: 300;
 }
 
 .single-footer-widget ::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #777777;
   font-weight: 300;
 }

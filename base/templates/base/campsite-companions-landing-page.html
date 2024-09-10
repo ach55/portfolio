@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/animate.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/animated-headline.css' %}">
     <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/magnific-popup.css' %}">
-    <!-- <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/fontawesome-all.min.css' %}"> -->
     <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/themify-icons.css' %}">
     <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/slick.css' %}">
     <link rel="stylesheet" href="{% static 'css/campsite-companions-landing-page-css/nice-select.css' %}">
@@ -37,8 +36,8 @@
                         <div class="row align-items-center">
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="">
-                                        <img class="campsite-companions-logo" src="{% static 'images/campsite-companions-landing-page-imgs/logo.png' %}" alt="logo">
+                                    <a href="#">
+                                        <img class="campsite-companions-logo" src="{% static 'images/campsite-companions-landing-page-imgs/logo.png' %}" alt="Logo">
                                     </a>
                                 </div>
                             </div>
@@ -52,9 +51,9 @@
                                                 <li><a href="#featured">Featured</a></li>
                                                 <li><a href="#testimonials">Testimonials</a></li>
                                                 <li><a href="#contact">Contact</a></li>
-                                                <li><i class="fas fa-magnifying-glass"></i></li>
-                                                <li><i class="fas fa-user"></i></li>
-                                                <li><i class="fas fa-shopping-cart"></i></li>
+                                                <li class="nav-list-icon"><i class="fas fa-magnifying-glass"></i></li>
+                                                <li class="nav-list-icon"><i class="fas fa-user"></i></li>
+                                                <li class="nav-list-icon"><i class="fas fa-shopping-cart"></i></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -80,6 +79,7 @@
                         <div class="row">
                             <div class="col-xl-8 col-lg-8 col-md-8 col-sm-10">
                                 <div class="hero__caption">
+                                    <!-- <img data-animation="fadeInUp" data-delay=".1s"src="{% static 'images/campsite-companions-landing-page-imgs/dog.png' %}" class="dog" alt="Image of dog"> -->
                                     <h1 data-animation="fadeInUp" data-delay=".2s">Adventure Awaits</h1>
                                     <P data-animation="fadeInUp" data-delay=".4s">Gear Up with Your Best Friend!</P>
                                     <div class="hero__btn">
@@ -130,17 +130,15 @@
             <!-- Left Div -->
             <div class="tailor-details">
                 <h2>About Us</h2>
-                <p>
-                    Ever wonder how to turn your outdoor escapades into exciting adventures for both you and your best friend? Well, wonder no more!
+                <p>Ever wonder how to turn your outdoor escapades into exciting adventures for both you and your best friend? Well, wonder no more!
                     <br><br>At Campsite Companions, we are committed to making every outdoor moment with your pup memorable.
                     We offer a great selection of outdoor supplies for both humans and dogs.
                     From strong leashes to collapsible water bowls to protective paw gear, we got you covered!
                     <br><br>For humans, we stock premium camping gear, including tents, sleeping bags, cooking equipment, and more, created with the best materials to guarantee durability and performance.
-                    So, what are you waiting for? Embark on your next adventure with your campsite companion!
-                </p>
+                    So, what are you waiting for? Embark on your next adventure with your campsite companion!</p>
                 <a href="#" class="about-btn mt-4">Learn More</a>
             </div>
-            <img src="{% static 'images/campsite-companions-landing-page-imgs/about-corner-img.png' %}" alt="Image of dog" class="bottom-right-image">
+            <img src="{% static 'images/campsite-companions-landing-page-imgs/about-corner-img.png' %}" class="bottom-right-image" alt="Image of dog">
         </div>
 
         <!-- Featured Items -->
@@ -149,147 +147,124 @@
                 <h2 class="text-center">Featured Items</h2>
                 <!-- Row 1 -->
                 <div class="row">
-                     <div class="col-md-2 col-sm-4 col-6 mb-4">
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
                         <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/tent.png' %}" alt="Tent" class="img-fluid">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/tent.png' %}" class="img-fluid" alt="Tent">
                             <div class="card-body text-center">
                                 <h5 class="card-title">CC Easy Set-Up Light Tent</h5>
                                 <p class="card-price">$134.99</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
                         <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/thermus-2.png' %}" alt="Grey Thermus" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">ThermoMate Red Thermus</h5>
-                                <p class="card-price">$45.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/thermus.png' %}" alt="Red Thermus" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Hot Lock Durable<br>769 ML Thermus</h5>
-                                <p class="card-price">$34.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/leash.png' %}" alt="Leash" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">CC 6ft Long Black Leash</h5>
-                                <p class="card-price">$19.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/dog-backpack.png' %}" alt="Dog Backpack" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Orange Dog Light Backback</h5>
-                                <p class="card-price">$34.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/gloves.png' %}" alt="Gloves" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Waterproof Insulated Breathable Gloves</h5>
-                                <p class="card-price">$34.68</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Row 2 -->
-                <div class="row">
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/coffee-maker.png' %}" alt="Coffee Maker" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Aluminum Espresso Coffee Maker</h5>
-                                <p class="card-price">$32.00</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/dog-bowl-1.png' %}" alt="Dog Bowl" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Collapsible Dog Bowl Set</h5>
-                                <p class="card-price">$61.49</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/chair.png' %}" alt="Chair" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Portable Folding Camping Chair</h5>
-                                <p class="card-price">$49.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/backpack.png' %}" alt="Hiking Backpack" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Lightweight Hiking Backpack</h5>
-                                <p class="card-price">$54.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/life-jacket.png' %}" alt="Life Jacket" class="img-fluid">
-                            <div class="card-body text-center">
-                                <h5 class="card-title">Camp Pet Dog Life Jacket</h5>
-                                <p class="card-price">$59.99</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 col-sm-4 col-6 mb-4">
-                        <div class="card">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/sleeping-bag.png' %}" alt="Sleeping Bag" class="img-fluid">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/sleeping-bag.png' %}" class="img-fluid" alt="Sleeping Bag">
                             <div class="card-body text-center">
                                 <h5 class="card-title">CC Green/Orange Sleeping Bag</h5>
                                 <p class="card-price">$64.99</p>
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/thermus.png' %}" class="img-fluid" alt="Red Thermus">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">ThermoMate Red Thermus</h5>
+                                <p class="card-price">$45.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/leash.png' %}" class="img-fluid" alt="Leash">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">CC 6ft Long Black Leash</h5>
+                                <p class="card-price">$19.99</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Row 2 -->
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/dog-backpack.png' %}" class="img-fluid" alt="Dog Backpack">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Orange Dog Light Backback</h5>
+                                <p class="card-price">$34.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/life-jacket.png' %}" class="img-fluid" alt="Life Jacket">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camp Pet Life Jacket for Dogs</h5>
+                                <p class="card-price">$59.99</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/coffee-maker.png' %}" class="img-fluid" alt="Coffee Maker">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Aluminum Espresso Coffee Maker</h5>
+                                <p class="card-price">$32.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-6 mb-4">
+                        <div class="card">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/items/dog-bowl.png' %}" class="img-fluid" alt="Dog Bowl">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Collapsible Dog Bowl Set</h5>
+                                <p class="card-price">$61.49</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-center features-btn-div">
+                <a href="#" class="features-btn mt-4">Shop More</a>
             </div>
         </section>
 
         <!-- Divider -->
-        <section class="section" id="call-to-action">
+        <section class="section" id="divider">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 offset-lg-1">
-                        <div class="cta-content">
-                        <h2></em></h2>
-                        <p></p>
-                        <div class="main-button scroll-to-section">
-                            <a href="#" class="btn btn-outline-light text-uppercase subscribe-btn">Subscribe</a>
-                        </div>
+                        <div class="divider-content">
+                            <!-- Text -->
+                            <i id="email-icon" class="fa-solid fa-envelope fa-3x"></i>
+                            <i id="paw-icon" class="fa-solid fa-paw fa-3x"></i>
+                            <h2>Stay updated for your next trip!</h2>
+                            <p>Sign up to our newsletter to get the latest news, discounts, and limited-time offers.</p>
+                            <!-- Input -->
+                            <div class="d-flex justify-content-center align-items-center">
+                                <form class="d-flex newsletter-form" action="#" method="post">
+                                    <input type="email" class="form-control email-input" placeholder="Sign up here..." required>
+                                    <button type="submit" class="sign-up-btn"><i class="fas fa-arrow-right"></i></button>
+                                </form>                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Testimonials Section -->
+        <!-- Testimonials -->
         <section id="testimonials" class="testimonials-section">
             <div class="testimonials-container">
-                <h2 class="text-center">Hear from our customers:</h2>
+                <h2 class="text-center">Hear from our customers!</h2>
+                <div class="d-flex justify-content-center align-items-center">
+                    <i id="paw-icon-testimonials" class="fa-solid fa-paw fa-2x"></i>
+                </div>
                 <div class="row">
                     <!-- Testimonial 1 -->
                     <div class="col-md-4">
                         <div class="testimonial-card p-4 text-center">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/testimonial-img-1.png' %}" class="testimonial-img mb-3" alt="Samantha Bloom">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/testimonial-img-1.png' %}" class="testimonial-img mb-5" alt="Picture of a woman">
                             <p class="testimonial-text">"Discovering Campsite Companions has been a game-changer for me and my Golden, Max. The heavy-duty leashes and protective paw gear mean I can take him on rougher trails without a worry."</p>
                             <h5 class="testimonial-name">Kelly R.</h5>
                             <p class="testimonial-position">Dog Trainer</p>
@@ -298,7 +273,7 @@
                     <!-- Testimonial 2 -->
                     <div class="col-md-4">
                         <div class="testimonial-card p-4 text-center">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/testimonial-img-2.png' %}" class="testimonial-img mb-3" alt="John Rowling">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/testimonial-img-2.png' %}" class="testimonial-img mb-5" alt="Piscture of a man">
                             <p class="testimonial-text">"I've used a lot of camping gear in my time, but the quality of equipment from Campsite Companions stands out. The tents and sleeping bags are top-notch!"</p>
                             <h5 class="testimonial-name">Mark S.</h5>
                             <p class="testimonial-position">Avid Camper</p>
@@ -307,7 +282,7 @@
                     <!-- Testimonial 3 -->
                     <div class="col-md-4">
                         <div class="testimonial-card p-4 text-center">
-                            <img src="{% static 'images/campsite-companions-landing-page-imgs/testimonial-img-3.png' %}" class="testimonial-img mb-3" alt="Lana Smith">
+                            <img src="{% static 'images/campsite-companions-landing-page-imgs/testimonial-img-3.png' %}" class="testimonial-img mb-5" alt="Piscture of a man">
                             <p class="testimonial-text">"Every time I prepare for a hike, I make sure to grab the collapsible water bowls and high-energy dog treats from Campsite Companions. Their products ensure my dog, Buddy, is as prepared as I am."</p>
                             <h5 class="testimonial-name">Burt G.</h5>
                             <p class="testimonial-position">Proud Dog Owner</p>
@@ -316,8 +291,6 @@
                 </div>
             </div>
         </section>
-
-
 
     </main>
 
@@ -330,18 +303,18 @@
                        <div class="col-xl-4 col-lg-3 col-md-8 col-sm-8">
                            <div class="single-footer-caption mb-50">
                                <div class="single-footer-caption mb-30">
-                                   <div class="footer-logo mb-35">
-                                       <!-- <a href="index.html"><img src="assets/img/logo/logo2_footer.png" alt=""></a> -->
+                                   <div class="footer-logo">
+                                       <img class="footer-logo-img" src="{% static 'images/campsite-companions-landing-page-imgs/circular-logo.png' %}" alt="Logo">
                                    </div>
                                    <div class="footer-tittle">
                                        <div class="footer-pera">
-                                           <p>The automated process starts as soon as your clothes go into the machine.</p>
+                                           <p>Campsite Companions is a fake company created by Anaik Chacon. Anaik's projects are intended as case studies and conceptual exercises only. If there are any concerns about the contents shown in this website, please reach out.</p>
                                        </div>
                                    </div>
                                    <div class="footer-social">
-                                       <a href="#"><i class="fab fa-twitter"></i></a>
+                                       <a href="#"><i class="fab fa-linkedin"></i></a>
                                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                       <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                       <a href="#"><i class="fab fa-instagram"></i></a>
                                    </div>
                                </div>
                            </div>
@@ -349,13 +322,13 @@
                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4">
                            <div class="single-footer-caption mb-50">
                                <div class="footer-tittle">
-                                   <h4>Our solutions</h4>
+                                   <h4>Shop by Category</h4>
                                    <ul>
-                                       <li><a href="#">Design & creatives</a></li>
-                                       <li><a href="#">Telecommunication</a></li>
-                                       <li><a href="#">Restaurant</a></li>
-                                       <li><a href="#">Programing</a></li>
-                                       <li><a href="#">Architecture</a></li>
+                                        <li><a href="#">Apparel</a></li>
+                                        <li><a href="#">Camping Gear</a></li>
+                                        <li><a href="#">Equipment</a></li>
+                                        <li><a href="#">Footware</a></li>
+                                        <li><a href="#">Winter Items</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -366,9 +339,10 @@
                                    <h4>Company</h4>
                                    <ul>
                                        <li><a href="#">About</a></li>
-                                       <li><a href="#">Review</a></li>
-                                       <li><a href="#">Insights</a></li>
-                                       <li><a href="#">Carrier</a></li>
+                                       <li><a href="#">Reviews</a></li>
+                                       <li><a href="#">Careers</a></li>
+                                       <li><a href="#">Privacy Policy</a></li>
+                                       <li><a href="#">Contact</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -378,10 +352,9 @@
                                <div class="footer-tittle">
                                    <h4>Contact us</h4>
                                    <ul>
-                                       <li><a href="#">consulto98@gmail.com</a></li>
-                                       <li><a href="#">76/A, Green road, NYC</a></li>
-                                       <li><a href="#">Privacy Policy</a></li>
-                                       <li class="number"><a href="#">(80) 783 367-3904</a></li>
+                                       <li><a href="#">info@campsitecompanions.com</a></li>
+                                       <li><a href="#">sales@campsitecompanions.com</a></li>
+                                       <li class="number"><a href="#">(+1) 111-222-3333</a></li>
                                    </ul>
                                </div>
                            </div>
@@ -395,9 +368,7 @@
                        <div class="row d-flex align-items-center">
                            <div class="col-xl-12 ">
                                <div class="footer-copy-right text-center">
-                                   <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                                      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                                   <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
                                   </div>
                               </div>
                           </div>
