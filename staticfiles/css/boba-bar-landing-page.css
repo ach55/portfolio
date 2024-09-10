@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
@@ -1322,6 +1321,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-top: 220px;
   background: url(../images/boba-bar-landing-page-imgs/footer.png) center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .footer-area h6 {
@@ -1445,7 +1445,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-text {
-  padding-top: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .footer-text a, .footer-text i {

@@ -2023,7 +2023,33 @@ hr {
 
 .footer-area .footer-tittle p {
 	color: #fff;
-	font-size: 15px
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.sources-btn {
+	border: 2px solid #EA6932;
+	color: #fff;
+	background-color: #EA6932;
+	border-radius: 30px;
+	text-transform: capitalize;
+	padding: 16px 27px;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	margin-bottom: 20px !important;
+	position: relative;
+	position: relative;
+	overflow: hidden;
+	margin: 0
+}
+
+.sources-btn:hover {
+	color: #fff !important;
+	border: 2px solid #fff;
+	background: transparent !important;
 }
 
 .footer-bottom-area .footer-border {

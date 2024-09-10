@@ -102,13 +102,6 @@ body {
     border-color: #944E63 !important;
 }
 
-.projects-btn {
-    color: white !important;
-    background-color: #944E63 !important;
-    border-color: #944E63 !important;
-    letter-spacing: 0.05em !important;
-}
-
 .linkedin-btn:hover {
     padding-top: 0.5em !important;
     color: #944E63 !important;
@@ -116,10 +109,17 @@ body {
     border-color: #944E63 !important;
 }
 
+.projects-btn {
+    color: #373A40 !important;
+    background-color: #fff !important;
+    border-color: #373A40 !important;
+    letter-spacing: 0.05em !important;
+}
+
 .projects-btn:hover {
-    color: #944E63 !important;
-    background-color: white !important;
-    border-color: #944E63 !important;
+    color: #fff !important;
+    background-color: #373A40 !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
 }
 
@@ -161,6 +161,21 @@ body {
 
 .back-to-top-btn:hover > #footer-back-to-top-icon {
     color: #944E63 !important;
+}
+
+.image-sources-btn {
+    background-color: #944E63 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.05em !important;
+    text-align: center !important;
+    margin-right: 2em !important;
+}
+
+.image-sources-btn:hover {
+    background-color: #ffffff !important;
+    color: #944E63 !important;
+    border-color: #944E63 !important;
+    letter-spacing: 0.05em !important;
 }
 
 #portfolio img {
@@ -467,115 +482,6 @@ body {
     width: 100%;
 }
 
-@media screen and (max-width: 1400px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: -1.8em
-    }
-}
-
-@media screen and (max-width: 1200px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: -3.6em
-    }
-}
-
-@media screen and (max-width: 990px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: -2.3em;
-    }
-}
-
-@media screen and (max-width: 767px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: 3em;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: 3em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: 2em;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 490px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: -1.3em;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: -1.8em;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    .project1-img,
-    .project2-img,
-    .project3-img {
-        height: 100%;
-        position: absolute;
-        width: auto;
-        left: 1em;
-    }
-}
-
 .form-floating input {
     height: 3em;
 }
@@ -652,49 +558,49 @@ body {
 }
 
 .projects-learn-more-btn {
-    color: #944E63 !important;
+    color: #373A40 !important;
     background-color: white !important;
-    border-color: #944E63 !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
     margin-right: 3em !important;
 }
 
 .projects-learn-more-btn:hover {
     color: white !important;
-    background-color: #944E63 !important;
-    border-color: #944E63 !important;
+    background-color: #373A40 !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
 }
 
 .boba-bar-visit-website-btn {
     background-color: #ffffff !important;
-    color: #698ebf !important;
-    border-color: #698ebf !important;
+    color: #373A40 !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
     text-align: center !important;
 }
  
- .boba-bar-visit-website-btn:hover {
-    background-color:#698ebf !important;
+.boba-bar-visit-website-btn:hover {
+    background-color:#373A40 !important;
     color: #ffffff !important;
-    border-color: #698ebf !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
 }
 
 .campsite-companions-visit-website-btn {
     background-color: #ffffff !important;
-    color: #1A4D2E !important;
-    border-color: #1A4D2E !important;
+    color: #373A40 !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
     text-align: center !important;
- }
+}
  
- .campsite-companions-visit-website-btn:hover {
-    background-color: #1A4D2E !important;
+.campsite-companions-visit-website-btn:hover {
+    background-color: #373A40 !important;
     color: #ffffff !important;
-    border-color: #1A4D2E !important;
+    border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
- }
+}
  
 .inner-page .slider-item {
     position:relative;
@@ -787,7 +693,7 @@ body {
     color: #fff!important
 }
 
-/* Divider / Call to Action */
+/* IMAGE SOURCES PAGE */
 
 #img-sources-header {
 	padding: 230px 0px;

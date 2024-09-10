@@ -34,8 +34,8 @@
                <li><a class="smoothscroll" href="#home">Home</a></li>
                <li><a class="smoothscroll" href="#about">About</a></li>
                <li><a class="smoothscroll" href="#menu">Menu</a></li>
+               <li><a class="smoothscroll" href="#gallery">Gallery</a></li>
                <li><a class="smoothscroll" href="#contact">Contact</a></li>
-               <li><a class="smoothscroll" href="{% url 'imagesources' %}">Image Sources</a></li>
            </ul>
          </nav>	    		
       </div>
@@ -372,11 +372,12 @@
          <div class="row">
             <div class="col-lg-5 col-md-6 col-sm-6">
                   <div class="single-footer-widget">
-                     <h6>About Us</h6>
+                     <h6>About</h6>
                      <p>The Boba Bar is a fake company created by Anaik Chacon. Anaik's projects are intended as case studies and conceptual exercises only. If there are any concerns about the contents shown in this website, please reach out.</p>
                      <p class="footer-text">Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved<br>
                         This website was put together with the help of <a href="https://colorlib.com" target="_blank"><strong>Colorlib</strong></a>
-                     </p>								
+                     </p>
+                     <p><a href="{% url 'imagesources' %}" class="btn btn-outline-light text-uppercase subscribe-btn" target="_blank">IMAGE SOURCES</a></p>						
                   </div>
             </div>
             <div class="col-lg-5  col-md-6 col-sm-6">

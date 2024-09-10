@@ -31,7 +31,6 @@
                     <li class="nav-item mx-2"><a class="nav-link" href="#about">ABOUT</a></li>
                     <li class="nav-item mx-2"><a class="nav-link" href="#projects">PROJECTS</a></li>
                     <li class="nav-item mx-2"><a class="nav-link" href="#contact">CONTACT</a></li>
-                    <li class="nav-item mx-2"><a class="nav-link" href="{% url 'imagesources' %}">IMAGE SOURCES</a></li>
                 </div>
             </div>
         </nav>
@@ -164,7 +163,7 @@
         </div>
         <div class="col-12 mt-5 mb-1 d-flex justify-content-center">
             <a href="{% url 'projects' %}">
-                <button class="btn btn-lg btn-outline-light text-uppercase projects-btn">More Projects</button>
+                <button class="btn btn-lg btn-outline-secondary text-uppercase projects-btn">More Projects</button>
             </a>
         </div> 
     </section>
@@ -216,6 +215,9 @@
     <footer>
         <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
             <p class="copyright my-0">© 2024 Anaik Chacon</p>
+            <a href="{% url 'imagesources' %}">
+                <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 image-sources-btn">IMAGE SOURCES</button>
+            </a>
             <a id="footer-back-to-top-link" class="smoothscroll" href="#hero">
                 <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 back-to-top-btn">
                     Top <i id="footer-back-to-top-icon" class="fa-solid fa-circle-up fa-lg"></i>

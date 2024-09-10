@@ -102,6 +102,21 @@ body {
    color: #944E63 !important;
 }
 
+.image-sources-btn {
+   background-color: #944E63 !important;
+   color: #ffffff !important;
+   letter-spacing: 0.05em !important;
+   text-align: center !important;
+   margin-right: 2em !important;
+}
+
+.image-sources-btn:hover {
+   background-color: #ffffff !important;
+   color: #944E63 !important;
+   border-color: #944E63 !important;
+   letter-spacing: 0.05em !important;
+}
+
 .slider-item {
    height: 100vh;
    background-color: #ffffff !important;
@@ -327,17 +342,17 @@ body {
 }
 
 .wei-visit-website-btn {
-   background-color: #88a9c3 !important;
+   background-color: #2b4257 !important;
    color: #ffffff !important;
    letter-spacing: 0.05em !important;
    text-align: center !important;
-   margin-right: 2em !important;
+   margin-left: 1em !important;
 }
 
 .wei-visit-website-btn:hover {
    background-color: #ffffff !important;
-   color: #88a9c3 !important;
-   border-color: #88a9c3 !important;
+   color: #2b4257 !important;
+   border-color: #2b4257 !important;
    letter-spacing: 0.05em !important;
 }
 

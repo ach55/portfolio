@@ -95,24 +95,27 @@
 
     <!-- Footer -->
     <footer class="mt-5">
-        <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
-            <p class="copyright my-0">© 2024 Anaik Chacon</p>
-            <a id="footer-back-to-top-link" class="smoothscroll" href="#hero">
-                <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 back-to-top-btn">
-                    Top <i id="footer-back-to-top-icon" class="fa-solid fa-circle-up fa-lg"></i>
-                </button>
-            </a>
-            <div class="footer-icons-div">
-                <ul class="social-icons mb-0 d-flex">
-                    <a href="https://www.instagram.com/ach555/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none">
-                        <img class="footer-instagram-logo" src="{% static 'images/instagram-logo.png' %}" alt="Instagram logo">
-                    </a>
-                    <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
-                        <i id="footer-linkedin-logo" class="fa-brands fa-2x fa-linkedin"></i>
-                    </a>
-                </ul>
-            </div>
-        </div>
+      <div class="container flex-wrap py-5 px-0 d-flex align-items-center justify-content-center justify-content-md-between">
+        <p class="copyright my-0">© 2024 Anaik Chacon</p>
+        <a href="{% url 'imagesources' %}">
+            <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 image-sources-btn">IMAGE SOURCES</button>
+        </a>
+        <a id="footer-back-to-top-link" class="smoothscroll" href="#hero">
+            <button type="button" class="btn btn-outline-light text-uppercase px-3 py-2 back-to-top-btn">
+                Top <i id="footer-back-to-top-icon" class="fa-solid fa-circle-up fa-lg"></i>
+            </button>
+        </a>
+        <div class="footer-icons-div">
+            <ul class="social-icons mb-0 d-flex">
+                <a href="https://www.instagram.com/ach555/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none">
+                    <img class="footer-instagram-logo" src="{% static 'images/instagram-logo.png' %}" alt="Instagram logo">
+                </a>
+                <a href="https://www.linkedin.com/in/anaik-chacon-828b161a3/" target="_blank" class="mx-2 d-flex align-items-center justify-content-center text-decoration-none rounded-circle">
+                    <i id="footer-linkedin-logo" class="fa-brands fa-2x fa-linkedin"></i>
+                </a>
+            </ul>
+          </div>
+      </div>
     </footer>
 
     <script>
