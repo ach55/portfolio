@@ -66,6 +66,7 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+WHITENOISE_KEEP_ONLY_HASHED_FILES = True
 
 ROOT_URLCONF = "portfolio.urls"
 
