@@ -2,3 +2,4 @@ django-crispy-forms==2.2
 crispy-bootstrap4
 python-dotenv
 gunicorn
+whitenoise
