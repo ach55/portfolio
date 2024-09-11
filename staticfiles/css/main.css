@@ -601,6 +601,23 @@ body {
     border-color: #373A40 !important;
     letter-spacing: 0.05em !important;
 }
+
+.page-not-found-btn {
+    background-color: #ffffff !important;
+    color: #373A40 !important;
+    border-color: #373A40 !important;
+    letter-spacing: 0.05em !important;
+    text-align: center !important;
+    margin-top: 1em !important;
+}
+
+.page-not-found-btn:hover {
+    background-color: #373A40 !important;
+    color: #ffffff !important;
+    border-color: #373A40 !important;
+    letter-spacing: 0.05em !important;
+    margin-top: 1em !important;
+}
  
 .inner-page .slider-item {
     position:relative;
