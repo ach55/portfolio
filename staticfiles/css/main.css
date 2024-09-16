@@ -261,10 +261,6 @@ body {
         display: none;
     }
 
-    .navbar-text {
-        font: 10px;
-    }
-
     .profile-pic {
         margin-top: 5em;
         width: 160px;
@@ -667,18 +663,19 @@ body {
     margin-bottom: 30px;
 }
 
+@media (max-width:991.98px) {
+    .slider-item .slider-text h1 {
+        font-size: 2em !important;
+        word-break: normal !important;
+    }
+}
+
 .slider-item .slider-text h1 span {
     font-family: 'Gotham', sans-serif !important; 
     color: white;
     background-color: #ffffff;
     -webkit-box-shadow: 0.5em 0 0 #ffffff, -0.5em 0 0 #ffffff;
     box-shadow: 0.5em 0 0 #ffffff, -0.5em 0 0 #ffffff;
-}
-
-@media (max-width: 991.98px) {
-    .slider-item .slider-text h1 {
-        font-size: 3rem;
-    }
 }
 
 .slider-item .slider-text p {
@@ -704,16 +701,25 @@ body {
 }
 
 .custom-breadcrumbs {
-    font-size: 1.5rem !important;
+    font-size: 1.5em;
 }
 
 .custom-breadcrumbs a {
     z-index: 2;
     display: inline-block;
-    font-size: 1.5rem!important;
     text-decoration: underline;
-    color: #fff!important
+    color: #fff !important
 }
+
+@media (max-width: 991.98px) {
+    .custom-breadcrumbs {
+        font-size: 1em !important;
+    }
+ 
+    .custom-breadcrumbs a {
+       font-size: 1em;
+    }
+ }
 
 /* IMAGE SOURCES PAGE */
 
@@ -726,7 +732,7 @@ body {
 	text-align: center;
 }
   
-.img-sources-header-content h1 {
+.img-sources-h1 {
     font-family: 'Gotham', sans-serif !important;
     letter-spacing: .3rem !important;
     text-transform: uppercase !important;

@@ -28,7 +28,7 @@ body {
 
 @media screen and (max-width: 991px) {
    .nav-link {
-       padding-top: 1.3em;
+      padding-top: 1.3em;
    }
 }
 
@@ -83,6 +83,15 @@ body {
    color: #0077B5 !important;
 }
 
+footer {
+   overflow-x: hidden;
+}
+
+/* .footer-row {
+   margin-right: 0px !important;
+   margin-left: 0px !important;
+} */
+
 .back-to-top-btn {
    background-color: #944E63 !important;
    color: #ffffff !important;
@@ -115,6 +124,13 @@ body {
    color: #944E63 !important;
    border-color: #944E63 !important;
    letter-spacing: 0.05em !important;
+}
+
+@media screen and (max-width: 990px) {
+   .image-sources-btn,
+   .back-to-top-btn {
+      margin-right: 0px !important;
+   }
 }
 
 .slider-item {
@@ -213,7 +229,7 @@ body {
 .slider-item-communications-certificate .slider-text h1,
 .slider-item-crochet .slider-text h1 {
    font-family: 'Gotham', sans-serif !important; 
-   font-size: 6rem;
+   font-size: 5rem;
    color: #fff;
    line-height: 1.2;
    letter-spacing: 0.3rem;
@@ -237,9 +253,15 @@ body {
    .slider-item-brand-guide .slider-text h1,
    .slider-item-boba-bar .slider-text h1,
    .slider-item-campsite-companions .slider-text h1,
-   .slider-item-communications-certificate .slider-text h1,
+   /* .slider-item-communications-certificate .slider-text h1, */
    .slider-item-crochet .slider-text h1 {
-       font-size:3rem
+      font-size: 2em !important;
+      word-break: normal !important;
+   }
+
+   .slider-item-communications-certificate .slider-text h1 {
+      font-size: 0.5em !important;
+      word-break: normal !important;
    }
 }
 
@@ -259,6 +281,7 @@ body {
 .slider-item-brand-guide .slider-text p a,
 .slider-item-boba-bar .slider-text p a,
 .slider-item-campsite-companions .slider-text p a,
+.slider-item-communications-certificate .slider-text p a,
 .slider-item-crochet .slider-text p a {
    text-decoration:underline
 }
@@ -283,20 +306,29 @@ body {
 }
 
 .custom-breadcrumbs {
-   font-size:1.5rem!important
+   font-size: 1.5em;
 }
 
 .custom-breadcrumbs a {
-   display:inline-block;
-   font-size:1.5rem!important;
-   text-decoration:underline;
-   color:#fff!important
+   display: inline-block;
+   text-decoration: underline;
+   color: #fff !important
+}
+
+@media (max-width: 991.98px) {
+   .custom-breadcrumbs {
+       font-size: 1em !important;
+   }
+
+   .custom-breadcrumbs a {
+      font-size: 1em !important;
+   }
 }
 
 .block-fixed {
-   position:sticky;
-   position:-webkit-sticky;
-   top:7em;
+   position: sticky;
+   position: -webkit-sticky;
+   top: 7em;
 }
 
 #projects-details-section {
@@ -316,7 +348,6 @@ body {
      padding: 1em !important;
    }
 }
-
 
 .boba-bar-visit-website-btn {
    background-color: #698ebf !important;
@@ -401,8 +432,8 @@ body {
    display:flex !important;
    -ms-flex-wrap:wrap !important;
    flex-wrap:wrap !important;
-   margin-right:-15px !important;
-   margin-left:-15px !important;
+   /* margin-right:-15px !important;
+   margin-left:-15px !important; */
 }
 .no-gutters{
    margin-right:0;
