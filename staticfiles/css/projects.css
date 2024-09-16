@@ -311,6 +311,13 @@ body {
    text-decoration-color: black !important
 }
 
+@media (max-width: 700px) {
+   .images-div {
+     padding: 1em !important;
+   }
+}
+
+
 .boba-bar-visit-website-btn {
    background-color: #698ebf !important;
    color: #ffffff !important;
@@ -1184,7 +1191,6 @@ body {
    -ms-transform:scale(1.05);
    transform:scale(1.05);
    z-index:2;
-   border-bottom:10px solid #ffc107
 }
 .media-custom{
    background:#fff;

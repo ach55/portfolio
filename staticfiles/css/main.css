@@ -261,6 +261,10 @@ body {
         display: none;
     }
 
+    .navbar-text {
+        font: 10px;
+    }
+
     .profile-pic {
         margin-top: 5em;
         width: 160px;
@@ -276,9 +280,10 @@ body {
 }
 
 @media screen and (max-width: 990px) {
+    .image-sources-btn,
     .back-to-top-btn {
-        display: none;
-    } 
+        margin-right: 0px !important;
+    }
 
     #about .card {
         width: calc(100% / 2 - 10px) !important;
@@ -340,7 +345,7 @@ body {
     margin: 0;
 }
 
-.portfolio .portfolio-item figure:hover img {
+.portfolio .portfolio-item figure:hover a img {
     opacity: 0.4;
     transition: 0.4s;
 }
@@ -723,8 +728,7 @@ body {
   
 .img-sources-header-content h1 {
     font-family: 'Gotham', sans-serif !important;
-    letter-spacing: .3rem;
-    font-size: 4em;
-    text-transform: uppercase;
-	color: #fff;
+    letter-spacing: .3rem !important;
+    text-transform: uppercase !important;
+	color: #fff !important;
 }
