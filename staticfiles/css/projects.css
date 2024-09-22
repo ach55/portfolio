@@ -147,7 +147,7 @@ footer {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   background-image: url("../images/heros/brand-guide-page-hero.png");
+   background-image: url("../images/heros/brand-guide-hero.jpg");
 }
 
 .slider-item-boba-bar {
@@ -156,7 +156,7 @@ footer {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   background-image: url("../images/heros/boba-bar-hero.png");
+   background-image: url("../images/heros/boba-bar-hero.jpg");
 }
 
 .slider-item-campsite-companions {
@@ -165,7 +165,7 @@ footer {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   background-image: url("../images/heros/campsite-companions-hero.png");
+   background-image: url("../images/heros/campsite-companions-hero.jpg");
 }
 
 .slider-item-communications-certificate {
@@ -174,7 +174,7 @@ footer {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   background-image: url("../images/heros/communications-certificate-hero.png");
+   background-image: url("../images/heros/communications-certificate-hero.jpg");
 }
 
 .slider-item-crochet {
@@ -183,7 +183,7 @@ footer {
    background-repeat: no-repeat;
    background-size: cover;
    background-attachment: fixed;
-   background-image: url("../images/heros/crochet-hero.png");
+   background-image: url("../images/heros/crochet-hero.jpg");
 }
 
 .slider-item:before,
